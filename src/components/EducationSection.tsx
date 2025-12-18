@@ -3,21 +3,21 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const EducationSection = () => {
   const education = [
     {
-      degree: "Informática de Gestão (IT Management)",
+      degree: "Management (Gestão)",
       institution: "Currently Pursuing",
       location: "Angola",
       period: "Ongoing",
       description:
-        "Developing skills in IT management, programming, databases, and business systems.",
+        "Developing skills in management, business administration, and organizational leadership.",
       current: true,
     },
     {
-      degree: "Elementary & Secondary Education",
+      degree: "Elementary & Secondary Education (1st Cycle)",
       institution: "School No. 5105, Calumbo",
       location: "Calumbo, Angola",
       period: "2017 - 2023",
       description:
-        "Completed 4th to 9th grade. Also earned certifications in Pedagogy, Oratory, Music & Vocal Techniques, and Computer Science.",
+        "Completed 4th to 9th grade. Certifications: English B2 Level, Basic & Intermediate Computer Science, Pedagogy and Oratory for Teachers, Pedagogy for ESL Teachers, Music & Vocal Techniques, Oratory and Youth Leadership.",
       current: false,
     },
   ];

@@ -1,4 +1,5 @@
 import { Laptop, Languages, Target, Heart } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const AboutSection = () => {
   const highlights = [
@@ -10,7 +11,7 @@ const AboutSection = () => {
     {
       icon: Languages,
       title: "Bilingual Professional",
-      description: "Native Portuguese speaker with fluent and proficient English (B2 certified)",
+      description: "Native Portuguese speaker with fluent and proficient English",
     },
     {
       icon: Target,
@@ -20,7 +21,7 @@ const AboutSection = () => {
     {
       icon: Heart,
       title: "Leadership & Teaching",
-      description: "Experience as Deputy Academic Director, Course Coordinator, and Teacher",
+      description: "Deputy Academic Director, Course Coordinator, and Online English Teacher",
     },
   ];
 
@@ -40,30 +41,41 @@ const AboutSection = () => {
 
           {/* Content Grid */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Text Content */}
+            {/* Profile Photo & Text Content */}
             <div className="space-y-6">
+              <div className="flex justify-center lg:justify-start mb-8">
+                <div className="relative">
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-elegant">
+                    <img 
+                      src={profilePhoto} 
+                      alt="Domingos Conde" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <span className="text-primary-foreground text-lg">👋</span>
+                  </div>
+                </div>
+              </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm currently pursuing{" "}
-                <span className="text-foreground font-medium">
-                  Informática de Gestão
-                </span>{" "}
-                (IT Management), while also serving as the{" "}
+                I'm the{" "}
                 <span className="text-foreground font-medium">
                   Founder and General Director of Open Mind Academy AO
                 </span>
-                , a hybrid English academy I established in December 2023.
+                , a hybrid English academy I established in December 2023. Currently 
+                pursuing studies in <span className="text-foreground font-medium">Management</span>.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 With experience as{" "}
                 <span className="text-foreground font-medium">
                   Deputy Academic Director
                 </span>{" "}
-                at Academia do Futuro and as an English teacher at multiple institutions,
+                at Academia do Futuro and as an Online English Teacher at Rose English School,
                 I've developed strong leadership, communication, and pedagogical skills.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I combine technical expertise in digital marketing, campaign management,
-                and design tools with excellent public speaking, youth leadership, and
+                HTML/CSS, and design tools with excellent public speaking, youth leadership, and
                 strategic thinking abilities.
               </p>
             </div>
