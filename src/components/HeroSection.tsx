@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/50 rounded-full border border-primary/20 mb-8 opacity-0 animate-fade-up">
             <Code className="w-4 h-4 text-primary" />
             <span className="text-accent-foreground text-sm font-medium">
-              IT Student & English Teacher
+              IT Management Student & English Teacher
             </span>
             <BookOpen className="w-4 h-4 text-primary" />
           </div>
@@ -23,16 +23,15 @@ const HeroSection = () => {
           {/* Main Title */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-accent-foreground mb-6 opacity-0 animate-fade-up delay-100">
             Hello, I'm
-            <span className="block text-gradient mt-2">Your Name</span>
+            <span className="block text-gradient mt-2">Domingos Conde</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up delay-200 leading-relaxed">
             Bridging the gap between{" "}
             <span className="text-primary font-medium">technology</span> and{" "}
-            <span className="text-primary font-medium">communication</span>.
-            Studying Business Informatics while bringing years of English teaching
-            experience.
+            <span className="text-primary font-medium">education</span>.
+            Founder of Open Mind Academy AO, with expertise in IT Management and English Teaching.
           </p>
 
           {/* CTA Buttons */}

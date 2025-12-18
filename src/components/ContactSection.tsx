@@ -23,20 +23,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "teacherelisio2023@outlook.com",
+      href: "mailto:teacherelisio2023@outlook.com",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Portugal",
+      value: "Angola",
       href: null,
     },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/domingosconde", label: "LinkedIn" },
   ];
 
   return (
