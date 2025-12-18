@@ -1,16 +1,18 @@
-import { Code2, Database, Globe, Users, MessageSquare, Lightbulb } from "lucide-react";
+import { Code2, Database, Globe, Users, MessageSquare, Lightbulb, Monitor, Palette } from "lucide-react";
 
 const SkillsSection = () => {
   const technicalSkills = [
-    { name: "Microsoft 365 (Word, Excel, PowerPoint)", level: 90, icon: Code2 },
-    { name: "Digital Marketing (SEO, Google Ads, Meta)", level: 85, icon: Globe },
-    { name: "Design Tools (Canva, InShot, CapCut)", level: 80, icon: Database },
+    { name: "Microsoft 365 (Word, Excel, PowerPoint, Outlook)", level: 90, icon: Code2 },
+    { name: "Google Ads & Meta Business Suite", level: 85, icon: Globe },
+    { name: "Design & Video (Canva, InShot, CapCut)", level: 80, icon: Palette },
+    { name: "HTML & CSS / Web Fundamentals", level: 70, icon: Monitor },
   ];
 
   const softSkills = [
     { name: "Public Speaking & Oratory", level: 95, icon: MessageSquare },
-    { name: "Youth Leadership", level: 90, icon: Users },
+    { name: "Youth Leadership & Team Coordination", level: 90, icon: Users },
     { name: "Persuasion & Negotiation", level: 85, icon: Lightbulb },
+    { name: "Critical Thinking & Creativity", level: 88, icon: Database },
   ];
 
   const SkillBar = ({
@@ -93,16 +95,16 @@ const SkillsSection = () => {
             </h4>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "English (B2 Certified)",
+                "English (Fluent & Proficient)",
                 "Portuguese (Native)",
-                "Google Ads",
-                "Facebook & Instagram Ads",
-                "Video Editing",
-                "Critical Thinking",
-                "Content Strategy",
-                "Team Coordination",
-                "Pedagogy",
+                "Pedagogy for ESL Teachers",
+                "Internet Protocols",
+                "SEO & Content Strategy",
+                "Campaign Performance Analysis",
                 "Music & Vocal Techniques",
+                "Oratory & Youth Leadership",
+                "Basic Computer Science",
+                "Management (Ongoing)",
               ].map((tag) => (
                 <span
                   key={tag}
