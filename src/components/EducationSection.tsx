@@ -3,7 +3,7 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const EducationSection = () => {
   const education = [
     {
-      degree: "Management (Gestão)",
+      degree: "IT Management (Informática de Gestão)",
       institution: "Currently Pursuing",
       location: "Angola",
       period: "Ongoing",
