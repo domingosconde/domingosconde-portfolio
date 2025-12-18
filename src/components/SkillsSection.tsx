@@ -2,15 +2,15 @@ import { Code2, Database, Globe, Users, MessageSquare, Lightbulb } from "lucide-
 
 const SkillsSection = () => {
   const technicalSkills = [
-    { name: "Programming Fundamentals", level: 75, icon: Code2 },
-    { name: "Database Management", level: 70, icon: Database },
-    { name: "Web Technologies", level: 65, icon: Globe },
+    { name: "Microsoft 365 (Word, Excel, PowerPoint)", level: 90, icon: Code2 },
+    { name: "Digital Marketing (SEO, Google Ads, Meta)", level: 85, icon: Globe },
+    { name: "Design Tools (Canva, InShot, CapCut)", level: 80, icon: Database },
   ];
 
   const softSkills = [
-    { name: "Communication", level: 95, icon: MessageSquare },
-    { name: "Teaching & Mentoring", level: 90, icon: Users },
-    { name: "Problem Solving", level: 85, icon: Lightbulb },
+    { name: "Public Speaking & Oratory", level: 95, icon: MessageSquare },
+    { name: "Youth Leadership", level: 90, icon: Users },
+    { name: "Persuasion & Negotiation", level: 85, icon: Lightbulb },
   ];
 
   const SkillBar = ({
@@ -93,14 +93,16 @@ const SkillsSection = () => {
             </h4>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "Microsoft Office",
-                "HTML/CSS",
-                "SQL Basics",
-                "English (Fluent)",
+                "English (B2 Certified)",
                 "Portuguese (Native)",
-                "Team Collaboration",
-                "Curriculum Design",
-                "Student Assessment",
+                "Google Ads",
+                "Facebook & Instagram Ads",
+                "Video Editing",
+                "Critical Thinking",
+                "Content Strategy",
+                "Team Coordination",
+                "Pedagogy",
+                "Music & Vocal Techniques",
               ].map((tag) => (
                 <span
                   key={tag}

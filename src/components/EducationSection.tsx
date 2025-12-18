@@ -3,21 +3,21 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const EducationSection = () => {
   const education = [
     {
-      degree: "Informática de Gestão",
-      institution: "Your High School Name",
-      location: "Portugal",
-      period: "Current",
+      degree: "Informática de Gestão (IT Management)",
+      institution: "Currently Pursuing",
+      location: "Angola",
+      period: "Ongoing",
       description:
-        "Studying business informatics with focus on programming, databases, and business systems management.",
+        "Developing skills in IT management, programming, databases, and business systems.",
       current: true,
     },
     {
-      degree: "English Language Teaching",
-      institution: "Your Previous Institution",
-      location: "Your Location",
-      period: "Previous Years",
+      degree: "Elementary & Secondary Education",
+      institution: "School No. 5105, Calumbo",
+      location: "Calumbo, Angola",
+      period: "2017 - 2023",
       description:
-        "Developed skills in pedagogy, curriculum design, and cross-cultural communication.",
+        "Completed 4th to 9th grade. Also earned certifications in Pedagogy, Oratory, Music & Vocal Techniques, and Computer Science.",
       current: false,
     },
   ];

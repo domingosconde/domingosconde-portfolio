@@ -4,23 +4,23 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Laptop,
-      title: "Tech Enthusiast",
-      description: "Passionate about Business Informatics and digital solutions",
+      title: "Tech & Digital Marketing",
+      description: "Proficient in Microsoft 365, Google Ads, Meta Business Suite, and design tools",
     },
     {
       icon: Languages,
-      title: "Language Expert",
-      description: "Background in English Language Teaching methodologies",
+      title: "Bilingual Professional",
+      description: "Native Portuguese speaker with fluent and proficient English (B2 certified)",
     },
     {
       icon: Target,
-      title: "Goal-Oriented",
-      description: "Focused on combining IT skills with communication abilities",
+      title: "Academy Founder",
+      description: "Founded and direct Open Mind Academy AO, a hybrid English academy",
     },
     {
       icon: Heart,
-      title: "People Person",
-      description: "Love helping others learn and grow through technology",
+      title: "Leadership & Teaching",
+      description: "Experience as Deputy Academic Director, Course Coordinator, and Teacher",
     },
   ];
 
@@ -43,26 +43,28 @@ const AboutSection = () => {
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm currently a student of{" "}
+                I'm currently pursuing{" "}
                 <span className="text-foreground font-medium">
                   Informática de Gestão
                 </span>{" "}
-                (Business Informatics), where I'm developing skills in programming,
-                database management, and business systems.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                My background in{" "}
+                (IT Management), while also serving as the{" "}
                 <span className="text-foreground font-medium">
-                  English Language Teaching
-                </span>{" "}
-                has given me strong communication skills, patience, and the ability
-                to explain complex concepts in simple terms – skills that translate
-                perfectly into the tech world.
+                  Founder and General Director of Open Mind Academy AO
+                </span>
+                , a hybrid English academy I established in December 2023.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                This unique combination allows me to bridge the gap between
-                technical teams and end-users, making me effective in roles that
-                require both technical knowledge and interpersonal skills.
+                With experience as{" "}
+                <span className="text-foreground font-medium">
+                  Deputy Academic Director
+                </span>{" "}
+                at Academia do Futuro and as an English teacher at multiple institutions,
+                I've developed strong leadership, communication, and pedagogical skills.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I combine technical expertise in digital marketing, campaign management,
+                and design tools with excellent public speaking, youth leadership, and
+                strategic thinking abilities.
               </p>
             </div>
 
