@@ -1,27 +1,27 @@
-import { Laptop, Languages, Target, Heart } from "lucide-react";
+import { Laptop, Languages, FileSpreadsheet, Wrench } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.png";
 
 const AboutSection = () => {
   const highlights = [
     {
+      icon: FileSpreadsheet,
+      title: "Advanced Excel & Reporting",
+      description: "Spreadsheets, formulas, data organization, reports, and basic analysis",
+    },
+    {
       icon: Laptop,
-      title: "Tecnologia & Marketing Digital",
-      description: "Proficiente em Microsoft 365, Google Ads, Meta Business Suite e ferramentas de design",
+      title: "Microsoft 365 & Google Workspace",
+      description: "Proficient in Word, PowerPoint, Outlook, and Google productivity tools",
+    },
+    {
+      icon: Wrench,
+      title: "IT Support & Troubleshooting",
+      description: "PC hardware, software fundamentals, system setup, and basic maintenance",
     },
     {
       icon: Languages,
-      title: "Profissional Bilingue",
-      description: "Falante nativo de Português com Inglês fluente e proficiente",
-    },
-    {
-      icon: Target,
-      title: "Fundador de Academia",
-      description: "Fundei e dirijo a Open Mind Academy AO, uma academia de inglês híbrida",
-    },
-    {
-      icon: Heart,
-      title: "Liderança & Ensino",
-      description: "Director Académico Adjunto, Coordenador de Cursos e Professor de Inglês Online",
+      title: "Bilingual Professional",
+      description: "Native Portuguese speaker with Upper Intermediate English (B2)",
     },
   ];
 
@@ -32,10 +32,10 @@ const AboutSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
-              Sobre Mim
+              About Me
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Dois Mundos, Uma Visão
+              Tech Meets Administration
             </h2>
           </div>
 
@@ -55,25 +55,26 @@ const AboutSection = () => {
                 </div>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Sou o{" "}
+                I am a{" "}
                 <span className="text-foreground font-medium">
-                  Fundador e Director Geral da Open Mind Academy AO
-                </span>
-                , uma academia de inglês híbrida que estabeleci em Dezembro de 2023. Actualmente 
-                a frequentar estudos em <span className="text-foreground font-medium">Gestão</span>.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Com experiência como{" "}
-                <span className="text-foreground font-medium">
-                  Director Académico Adjunto
+                  Tech Administrative Assistant
                 </span>{" "}
-                na Academia do Futuro e como Professor de Inglês Online na Rose English School,
-                desenvolvi fortes competências de liderança, comunicação e pedagogia.
+                with strong experience in administrative operations, advanced Excel reporting, 
+                and hands-on IT support. Based in{" "}
+                <span className="text-foreground font-medium">Calumbo Sede, Icolo e Bengo, Angola</span>.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Combino conhecimentos técnicos em marketing digital, gestão de campanhas,
-                HTML/CSS e ferramentas de design com excelentes capacidades de oratória, liderança juvenil e
-                pensamento estratégico.
+                I have proven ability to manage documentation, schedules, databases, 
+                and digital platforms while also providing basic computer maintenance 
+                and troubleshooting support.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Currently pursuing a{" "}
+                <span className="text-foreground font-medium">
+                  High School Intermediate Course in Computer Science Management
+                </span>{" "}
+                at Complexo Escolar Privado FENDA DA TUNDAVALA, combining administrative 
+                rigor with solid understanding of PC hardware, software, and productivity systems.
               </p>
             </div>
 

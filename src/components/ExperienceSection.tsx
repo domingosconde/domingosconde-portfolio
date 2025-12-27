@@ -3,35 +3,27 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Professor de Inglês Online",
+      title: "Online English Teacher",
       company: "Rose English School",
-      location: "Remoto",
-      period: "Março 2025 - Presente",
-      description: "Ensino de inglês online para estudantes de vários níveis.",
+      location: "Remote",
+      period: "March 2025 - October 2025",
+      description: "Deliver online English classes using digital platforms. Manage virtual classrooms, student follow-up, and learning materials. Maintain organized digital records of student progress.",
       current: true,
     },
     {
-      title: "Fundador & Director Geral",
+      title: "Founder & Administrative Manager",
       company: "Open Mind Academy AO",
-      location: "Angola",
-      period: "Dezembro 2023 - Presente",
-      description: "Fundei e dirijo actualmente uma academia de inglês híbrida, gerindo operações, desenvolvimento curricular e envolvimento de estudantes.",
+      location: "Luanda, Angola",
+      period: "December 2023 - Present",
+      description: "Managed daily administrative operations of a hybrid English academy, including student records, scheduling, documentation, and internal coordination.",
       current: true,
     },
     {
-      title: "Director Académico Adjunto & Coordenador de Cursos",
-      company: "Academia do Futuro",
-      location: "Calumbo, Angola",
-      period: "Setembro 2023 - Junho 2024",
-      description: "Servi como Director Académico Adjunto, Coordenador de Cursos, e leccionei Inglês e aulas do Ensino Primário.",
-      current: false,
-    },
-    {
-      title: "Professor de Inglês",
+      title: "Administrative Support & English Teacher",
       company: "André Class",
-      location: "Angola",
-      period: "2022 - Agosto 2023",
-      description: "Comecei como professor estagiário e progredi para ensinar inglês no centro onde aprendi a língua pela primeira vez.",
+      location: "Luanda, Angola",
+      period: "2022 - June 2024",
+      description: "Provided administrative assistance alongside teaching responsibilities. Organized student information, schedules, and class materials. Supported internal communication and coordination between staff and students.",
       current: false,
     },
   ];
@@ -43,10 +35,10 @@ const ExperienceSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
-              Experiência
+              Experience
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Percurso Profissional
+              Professional Journey
             </h2>
           </div>
 
@@ -82,7 +74,7 @@ const ExperienceSection = () => {
                       {/* Badge */}
                       {item.current && (
                         <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-4">
-                          Posição Actual
+                          Current Position
                         </span>
                       )}
 

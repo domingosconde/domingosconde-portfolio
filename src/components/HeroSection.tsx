@@ -1,4 +1,4 @@
-import { ArrowDown, Code, BookOpen } from "lucide-react";
+import { ArrowDown, Briefcase, Download } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -13,25 +13,25 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/50 rounded-full border border-primary/20 mb-8 opacity-0 animate-fade-up">
-            <Code className="w-4 h-4 text-primary" />
+            <Briefcase className="w-4 h-4 text-primary" />
             <span className="text-accent-foreground text-sm font-medium">
-              Estudante de Gestão & Professor de Inglês
+              Tech Administrative Assistant
             </span>
-            <BookOpen className="w-4 h-4 text-primary" />
           </div>
 
           {/* Main Title */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-accent-foreground mb-6 opacity-0 animate-fade-up delay-100">
-            Olá, eu sou o
+            Hi, I'm
             <span className="block text-gradient mt-2">Domingos Conde</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up delay-200 leading-relaxed">
-            Unindo a{" "}
-            <span className="text-primary font-medium">tecnologia</span> e a{" "}
-            <span className="text-primary font-medium">educação</span>.
-            Fundador da Open Mind Academy AO, com experiência em Gestão e Ensino de Inglês.
+            Tech-oriented{" "}
+            <span className="text-primary font-medium">Administrative Assistant</span> with strong experience in{" "}
+            <span className="text-primary font-medium">Excel reporting</span> and{" "}
+            <span className="text-primary font-medium">IT support</span>.
+            Combining administrative rigor with solid understanding of technology.
           </p>
 
           {/* CTA Buttons */}
@@ -40,13 +40,21 @@ const HeroSection = () => {
               href="#about"
               className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:glow-primary hover:scale-105"
             >
-              Saber Mais
+              Learn More
+            </a>
+            <a
+              href="/cv/Domingos_Conde_CV.pdf"
+              download
+              className="px-8 py-4 border border-primary text-primary rounded-lg font-medium transition-all duration-300 hover:bg-primary hover:text-primary-foreground flex items-center gap-2"
+            >
+              <Download className="w-4 h-4" />
+              Download CV
             </a>
             <a
               href="#contact"
               className="px-8 py-4 border border-accent-foreground/20 text-accent-foreground rounded-lg font-medium transition-all duration-300 hover:bg-accent-foreground/10"
             >
-              Entrar em Contacto
+              Get in Touch
             </a>
           </div>
         </div>
@@ -57,7 +65,7 @@ const HeroSection = () => {
             href="#about"
             className="flex flex-col items-center gap-2 text-accent-foreground/50 hover:text-primary transition-colors"
           >
-            <span className="text-xs uppercase tracking-widest">Deslizar</span>
+            <span className="text-xs uppercase tracking-widest">Scroll</span>
             <ArrowDown className="w-5 h-5 animate-float" />
           </a>
         </div>

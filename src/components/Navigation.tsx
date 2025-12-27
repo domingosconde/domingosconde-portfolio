@@ -14,12 +14,12 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { href: "#about", label: "Sobre" },
-    { href: "#projects", label: "Projectos" },
-    { href: "#experience", label: "Experiência" },
-    { href: "#skills", label: "Competências" },
-    { href: "#education", label: "Educação" },
-    { href: "#contact", label: "Contacto" },
+    { href: "#about", label: "About" },
+    { href: "#projects", label: "Projects" },
+    { href: "#experience", label: "Experience" },
+    { href: "#skills", label: "Skills" },
+    { href: "#education", label: "Education" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
