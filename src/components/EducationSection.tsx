@@ -1,4 +1,5 @@
-import { GraduationCap, Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
+import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
 
 const EducationSection = () => {
   const education = [
@@ -10,6 +11,7 @@ const EducationSection = () => {
       description:
         "Developing skills in management, business administration, and organizational leadership with a focus on computer science.",
       current: true,
+      logo: fendaTundavalaLogo,
     },
   ];
 
@@ -63,9 +65,13 @@ const EducationSection = () => {
                         </span>
                       )}
 
-                      {/* Icon */}
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                        <GraduationCap className="w-6 h-6 text-primary" />
+                      {/* Institution Logo */}
+                      <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 overflow-hidden bg-white border border-border">
+                        <img 
+                          src={item.logo} 
+                          alt={`${item.institution} logo`}
+                          className="w-full h-full object-contain p-1"
+                        />
                       </div>
 
                       {/* Title */}

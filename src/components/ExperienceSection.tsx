@@ -2,7 +2,7 @@ import { Calendar, MapPin } from "lucide-react";
 import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
 import roseEnglishLogo from "@/assets/logos/roseenglish.jpg";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
-import andreClassLogo from "@/assets/logos/andreclass.jpg";
+import andreClassLogo from "@/assets/logos/andreclass.png";
 
 const ExperienceSection = () => {
   const experiences = [
