@@ -52,9 +52,6 @@ const AboutSection = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                    <span className="text-primary-foreground text-lg">👋</span>
-                  </div>
                 </div>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
