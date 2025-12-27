@@ -1,4 +1,4 @@
-import { Mail, MapPin, Send, Linkedin, Github } from "lucide-react";
+import { Mail, MapPin, Send, Linkedin, Github, Facebook, Instagram, Music2, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -36,6 +36,11 @@ const ContactSection = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: "https://www.linkedin.com/in/domingosconde", label: "LinkedIn" },
+    { icon: Facebook, href: "https://www.facebook.com/share/181fNCD7Vw/", label: "Facebook" },
+    { icon: Instagram, href: "https://www.instagram.com/domingosconde_", label: "Instagram" },
+    { icon: Music2, href: "https://www.tiktok.com/@domingosconde_", label: "TikTok" },
+    { icon: Github, href: "https://github.com/domingosconde", label: "GitHub" },
+    { icon: MessageCircle, href: "https://wa.me/+244941107217", label: "WhatsApp" },
   ];
 
   return (
