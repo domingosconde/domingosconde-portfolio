@@ -1,4 +1,8 @@
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
+import pixelShitzLogo from "@/assets/logos/pixelshitz.webp";
+import roseEnglishLogo from "@/assets/logos/roseenglish.jpg";
+import openMindLogo from "@/assets/logos/openmindacademy.png";
+import andreClassLogo from "@/assets/logos/andreclass.jpg";
 
 const ExperienceSection = () => {
   const experiences = [
@@ -9,6 +13,7 @@ const ExperienceSection = () => {
       period: "September 2025 - Present",
       description: "Founded and manage a t-shirt brand for Nerds, Otakus, Devs, Gamers, and Geeks. Overseeing product design, e-commerce operations, inventory management, and brand marketing.",
       current: true,
+      logo: pixelShitzLogo,
     },
     {
       title: "Online English Teacher",
@@ -17,6 +22,7 @@ const ExperienceSection = () => {
       period: "March 2025 - October 2025",
       description: "Deliver online English classes using digital platforms. Manage virtual classrooms, student follow-up, and learning materials. Maintain organized digital records of student progress.",
       current: false,
+      logo: roseEnglishLogo,
     },
     {
       title: "Founder & Administrative Manager",
@@ -25,6 +31,7 @@ const ExperienceSection = () => {
       period: "December 2023 - Present",
       description: "Managed daily administrative operations of a hybrid English academy, including student records, scheduling, documentation, and internal coordination.",
       current: true,
+      logo: openMindLogo,
     },
     {
       title: "Administrative Support & English Teacher",
@@ -33,6 +40,7 @@ const ExperienceSection = () => {
       period: "2022 - June 2024",
       description: "Provided administrative assistance alongside teaching responsibilities. Organized student information, schedules, and class materials. Supported internal communication and coordination between staff and students.",
       current: false,
+      logo: andreClassLogo,
     },
   ];
 
@@ -86,9 +94,13 @@ const ExperienceSection = () => {
                         </span>
                       )}
 
-                      {/* Icon */}
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                        <Briefcase className="w-6 h-6 text-primary" />
+                      {/* Company Logo */}
+                      <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 overflow-hidden bg-white border border-border">
+                        <img 
+                          src={item.logo} 
+                          alt={`${item.company} logo`}
+                          className="w-full h-full object-contain p-1"
+                        />
                       </div>
 
                       {/* Title */}
