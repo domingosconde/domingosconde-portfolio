@@ -21,7 +21,7 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-accent-foreground mb-6 opacity-0 animate-fade-up delay-100">
-            Hi, I'm
+            Hey, I am
             <span className="block text-gradient mt-2">Domingos Conde</span>
           </h1>
 
