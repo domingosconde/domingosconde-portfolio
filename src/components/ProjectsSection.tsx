@@ -1,11 +1,13 @@
-import { ExternalLink, School, Users, Globe } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import openMindLogo from "@/assets/logos/openmindacademy.png";
+import pixelShitzLogo from "@/assets/logos/pixelshitz.webp";
 
 const ProjectsSection = () => {
   const projects = [
     {
       title: "Open Mind Academy AO",
       description: "Hybrid English academy that I founded and manage. Managing daily administrative operations including student records, scheduling, documentation, and internal coordination.",
-      icon: School,
+      image: openMindLogo,
       tags: ["Education", "Administration", "Management"],
       link: null,
       featured: true,
@@ -13,7 +15,7 @@ const ProjectsSection = () => {
     {
       title: "PixelShitZ",
       description: "A brand for selling t-shirts designed for Nerds, Otakus, Devs, Gamers, and Geeks. Managing product design, e-commerce operations, and brand marketing.",
-      icon: Globe,
+      image: pixelShitzLogo,
       tags: ["E-commerce", "Fashion", "Geek Culture"],
       link: null,
       featured: true,
@@ -38,7 +40,7 @@ const ProjectsSection = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {projects.map((project, index) => (
               <div
                 key={project.title}
@@ -52,9 +54,13 @@ const ProjectsSection = () => {
                   </div>
                 )}
 
-                {/* Icon */}
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                  <project.icon className="w-7 h-7 text-primary" />
+                {/* Logo Image */}
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden bg-white">
+                  <img 
+                    src={project.image} 
+                    alt={`${project.title} logo`}
+                    className="w-full h-full object-contain p-2"
+                  />
                 </div>
 
                 {/* Content */}
