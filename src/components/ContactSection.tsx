@@ -1,4 +1,4 @@
-import { Mail, MapPin, Send, Linkedin, Github, Facebook, Instagram, Music2, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Linkedin, Github, Facebook, Instagram, Music2, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -13,8 +13,8 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Mensagem Enviada!",
-      description: "Obrigado por entrar em contacto. Responderei em breve.",
+      title: "Message Sent!",
+      description: "Thank you for reaching out. I'll get back to you soon.",
     });
     setFormData({ name: "", email: "", message: "" });
   };
@@ -23,13 +23,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "teacherelisio2023@outlook.com",
-      href: "mailto:teacherelisio2023@outlook.com",
+      value: "domingoslionjalaconde@gmail.com",
+      href: "mailto:domingoslionjalaconde@gmail.com",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "(+244) 941 107 217",
+      href: "tel:+244941107217",
     },
     {
       icon: MapPin,
-      label: "Localização",
-      value: "Angola",
+      label: "Location",
+      value: "Calumbo Sede, Icolo e Bengo, Angola",
       href: null,
     },
   ];
@@ -50,13 +56,13 @@ const ContactSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
-              Contacto
+              Contact
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Vamos Conectar
+              Let's Connect
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Tem uma questão ou quer trabalhar comigo? Sinta-se à vontade para entrar em contacto!
+              Have a question or want to work together? Feel free to reach out!
             </p>
           </div>
 
@@ -91,7 +97,7 @@ const ContactSection = () => {
               {/* Social Links */}
               <div className="pt-8 border-t border-border">
                 <p className="text-sm text-muted-foreground mb-4">
-                  Conecte-se comigo nas redes sociais
+                  Connect with me on social media
                 </p>
                 <div className="flex flex-wrap gap-4">
                   {socialLinks.map((link) => (
@@ -118,7 +124,7 @@ const ContactSection = () => {
                     htmlFor="name"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Nome
+                    Name
                   </label>
                   <input
                     type="text"
@@ -128,7 +134,7 @@ const ContactSection = () => {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-                    placeholder="O seu nome"
+                    placeholder="Your name"
                     required
                   />
                 </div>
@@ -147,7 +153,7 @@ const ContactSection = () => {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-                    placeholder="seu@email.com"
+                    placeholder="your@email.com"
                     required
                   />
                 </div>
@@ -157,7 +163,7 @@ const ContactSection = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-foreground mb-2"
                 >
-                  Mensagem
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -167,7 +173,7 @@ const ContactSection = () => {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all resize-none"
-                  placeholder="Como posso ajudá-lo?"
+                  placeholder="How can I help you?"
                   required
                 />
               </div>
@@ -176,7 +182,7 @@ const ContactSection = () => {
                 className="w-full sm:w-auto px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:glow-primary hover:scale-105 flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                Enviar Mensagem
+                Send Message
               </button>
             </form>
           </div>

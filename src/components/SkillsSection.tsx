@@ -1,18 +1,23 @@
-import { Code2, Globe, Users, MessageSquare, Lightbulb, Monitor, Palette, Brain } from "lucide-react";
+import { FileSpreadsheet, Monitor, Code2, Globe, Users, MessageSquare, Clock, Eye, ShieldCheck, Lightbulb } from "lucide-react";
 
 const SkillsSection = () => {
   const technicalSkills = [
-    { name: "Microsoft 365 (Word, Excel, PowerPoint, Outlook)", level: 90, icon: Code2 },
-    { name: "Google Ads & Meta Business Suite", level: 85, icon: Globe },
-    { name: "Design & Vídeo (Canva, InShot, CapCut)", level: 80, icon: Palette },
-    { name: "HTML & CSS / Fundamentos Web", level: 70, icon: Monitor },
+    { name: "Microsoft Excel (Advanced)", level: 95, icon: FileSpreadsheet },
+    { name: "Microsoft 365 (Word, PowerPoint, Outlook)", level: 90, icon: Monitor },
+    { name: "Google Workspace Tools", level: 85, icon: Globe },
+    { name: "PC Hardware & Software Fundamentals", level: 80, icon: Code2 },
+    { name: "Basic Computer Maintenance & Troubleshooting", level: 75, icon: Monitor },
+    { name: "HTML & CSS (Basic)", level: 70, icon: Code2 },
   ];
 
   const softSkills = [
-    { name: "Oratória & Comunicação Pública", level: 95, icon: MessageSquare },
-    { name: "Liderança Juvenil & Coordenação de Equipas", level: 90, icon: Users },
-    { name: "Persuasão & Negociação", level: 85, icon: Lightbulb },
-    { name: "Pensamento Crítico & Criatividade", level: 88, icon: Brain },
+    { name: "Administrative Organization & Documentation", level: 95, icon: Users },
+    { name: "Data Management & Reporting", level: 90, icon: FileSpreadsheet },
+    { name: "Professional Communication", level: 90, icon: MessageSquare },
+    { name: "Time Management & Task Prioritization", level: 88, icon: Clock },
+    { name: "Attention to Detail & Accuracy", level: 92, icon: Eye },
+    { name: "Problem Solving & Operational Support", level: 85, icon: Lightbulb },
+    { name: "Confidentiality & Professional Ethics", level: 95, icon: ShieldCheck },
   ];
 
   const SkillBar = ({
@@ -47,7 +52,7 @@ const SkillsSection = () => {
               Expertise
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Competências & Habilidades
+              Skills & Competencies
             </h2>
           </div>
 
@@ -60,7 +65,7 @@ const SkillsSection = () => {
                   <Code2 className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="font-display text-2xl font-semibold text-foreground">
-                  Competências Técnicas
+                  Technical Skills
                 </h3>
               </div>
               <div className="space-y-6 bg-card p-8 rounded-xl border border-border">
@@ -77,7 +82,7 @@ const SkillsSection = () => {
                   <Users className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="font-display text-2xl font-semibold text-foreground">
-                  Competências Interpessoais
+                  Administrative & Soft Skills
                 </h3>
               </div>
               <div className="space-y-6 bg-card p-8 rounded-xl border border-border">
@@ -91,20 +96,18 @@ const SkillsSection = () => {
           {/* Additional Skills Tags */}
           <div className="mt-16 text-center animate-on-scroll">
             <h4 className="text-lg font-medium text-foreground mb-6">
-              Também Familiarizado Com
+              Also Familiar With
             </h4>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "Inglês (Fluente & Proficiente)",
-                "Português (Nativo)",
-                "Pedagogia para Professores ESL",
-                "Protocolos de Internet",
-                "SEO & Estratégia de Conteúdo",
-                "Análise de Performance de Campanhas",
-                "Música & Técnicas Vocais",
-                "Oratória & Liderança Juvenil",
-                "Ciência da Computação Básica",
-                "Gestão (Em Curso)",
+                "English (Upper Intermediate B2)",
+                "Portuguese (Native)",
+                "Internet Protocols & Web Fundamentals",
+                "Digital File Organization",
+                "Data Management",
+                "Educational Environments",
+                "Digital Platforms",
+                "Strong Adaptability to New Software",
               ].map((tag) => (
                 <span
                   key={tag}

@@ -3,22 +3,13 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const EducationSection = () => {
   const education = [
     {
-      degree: "Informática de Gestão",
-      institution: "Em Curso",
+      degree: "High School - Intermediate Course in Computer Science Management",
+      institution: "Complexo Escolar Privado de Intercâmbio Cultural Angola e China FENDA DA TUNDAVALA",
       location: "Angola",
-      period: "Actualmente",
+      period: "Ongoing",
       description:
-        "A desenvolver competências em gestão, administração de empresas e liderança organizacional.",
+        "Developing skills in management, business administration, and organizational leadership with a focus on computer science.",
       current: true,
-    },
-    {
-      degree: "Ensino Primário & Secundário (1º Ciclo)",
-      institution: "Escola Nº 5105, Calumbo",
-      location: "Calumbo, Angola",
-      period: "2017 - 2023",
-      description:
-        "Completei da 4ª à 9ª classe. Certificações: Inglês Nível B2, Informática Básica & Intermédia, Pedagogia e Oratória para Professores, Pedagogia para Professores ESL, Música & Técnicas Vocais, Oratória e Liderança Juvenil.",
-      current: false,
     },
   ];
 
@@ -29,10 +20,10 @@ const EducationSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
-              Educação
+              Education
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Percurso Académico
+              Academic Background
             </h2>
           </div>
 
@@ -68,7 +59,7 @@ const EducationSection = () => {
                       {/* Badge */}
                       {item.current && (
                         <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-4">
-                          A Estudar Actualmente
+                          Currently Studying
                         </span>
                       )}
 

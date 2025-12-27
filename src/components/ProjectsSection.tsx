@@ -4,25 +4,25 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Open Mind Academy AO",
-      description: "Academia de inglês híbrida que fundei e dirijo. Oferecemos cursos presenciais e online para estudantes de todos os níveis.",
+      description: "Hybrid English academy that I founded and manage. Managing daily administrative operations including student records, scheduling, documentation, and internal coordination.",
       icon: School,
-      tags: ["Educação", "Liderança", "Gestão"],
+      tags: ["Education", "Administration", "Management"],
       link: null,
       featured: true,
     },
     {
-      title: "Formação de Professores",
-      description: "Desenvolvimento de programas de formação pedagógica para professores de inglês, incluindo metodologias ESL.",
-      icon: Users,
-      tags: ["Pedagogia", "ESL", "Formação"],
+      title: "Rose English School",
+      description: "Online English teaching using digital platforms. Managing virtual classrooms, student follow-up, and maintaining organized digital records of student progress.",
+      icon: Globe,
+      tags: ["Online Teaching", "Digital Platforms", "Remote"],
       link: null,
       featured: false,
     },
     {
-      title: "Marketing Digital",
-      description: "Gestão de campanhas publicitárias no Google Ads e Meta Business Suite para instituições educacionais.",
-      icon: Globe,
-      tags: ["Google Ads", "Meta Ads", "SEO"],
+      title: "André Class",
+      description: "Administrative support and English teaching. Organizing student information, schedules, class materials, and supporting internal communication between staff and students.",
+      icon: Users,
+      tags: ["Administration", "Teaching", "Coordination"],
       link: null,
       featured: false,
     },
@@ -35,13 +35,13 @@ const ProjectsSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
-              Projectos
+              Projects
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Trabalhos em Destaque
+              Featured Work
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Iniciativas e projectos que desenvolvi ao longo da minha carreira
+              Initiatives and projects I have developed throughout my career
             </p>
           </div>
 
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
                 {/* Featured Badge */}
                 {project.featured && (
                   <div className="absolute -top-3 -right-3 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
-                    Destaque
+                    Featured
                   </div>
                 )}
 
@@ -93,7 +93,7 @@ const ProjectsSection = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline"
                   >
-                    Ver Projecto
+                    View Project
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 )}
