@@ -14,11 +14,12 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    { href: "#skills", label: "Skills" },
-    { href: "#education", label: "Education" },
-    { href: "#contact", label: "Contact" },
+    { href: "#about", label: "Sobre" },
+    { href: "#projects", label: "Projectos" },
+    { href: "#experience", label: "Experiência" },
+    { href: "#skills", label: "Competências" },
+    { href: "#education", label: "Educação" },
+    { href: "#contact", label: "Contacto" },
   ];
 
   return (
@@ -35,7 +36,7 @@ const Navigation = () => {
             href="#"
             className="font-display text-xl font-semibold text-foreground hover:text-primary transition-colors"
           >
-            Portfolio
+            Domingos Conde
           </a>
 
           {/* Desktop Navigation */}

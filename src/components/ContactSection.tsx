@@ -13,8 +13,8 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      title: "Mensagem Enviada!",
+      description: "Obrigado por entrar em contacto. Responderei em breve.",
     });
     setFormData({ name: "", email: "", message: "" });
   };
@@ -28,7 +28,7 @@ const ContactSection = () => {
     },
     {
       icon: MapPin,
-      label: "Location",
+      label: "Localização",
       value: "Angola",
       href: null,
     },
@@ -48,21 +48,21 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
-              Contact
+              Contacto
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Let's Connect
+              Vamos Conectar
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Have a question or want to work together? Feel free to reach out!
+              Tem uma questão ou quer trabalhar comigo? Sinta-se à vontade para entrar em contacto!
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Info */}
-            <div className="space-y-8">
+            <div className="space-y-8 animate-on-scroll">
               <div className="space-y-6">
                 {contactInfo.map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
@@ -91,14 +91,16 @@ const ContactSection = () => {
               {/* Social Links */}
               <div className="pt-8 border-t border-border">
                 <p className="text-sm text-muted-foreground mb-4">
-                  Connect with me on social media
+                  Conecte-se comigo nas redes sociais
                 </p>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                   {socialLinks.map((link) => (
                     <a
                       key={link.label}
                       href={link.href}
-                      className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:scale-110 transition-all duration-300"
                       aria-label={link.label}
                     >
                       <link.icon className="w-5 h-5" />
@@ -109,14 +111,14 @@ const ContactSection = () => {
             </div>
 
             {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 animate-on-scroll" style={{ transitionDelay: "150ms" }}>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label
                     htmlFor="name"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Name
+                    Nome
                   </label>
                   <input
                     type="text"
@@ -126,7 +128,7 @@ const ContactSection = () => {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-                    placeholder="Your name"
+                    placeholder="O seu nome"
                     required
                   />
                 </div>
@@ -145,7 +147,7 @@ const ContactSection = () => {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-                    placeholder="your@email.com"
+                    placeholder="seu@email.com"
                     required
                   />
                 </div>
@@ -155,7 +157,7 @@ const ContactSection = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-foreground mb-2"
                 >
-                  Message
+                  Mensagem
                 </label>
                 <textarea
                   id="message"
@@ -165,7 +167,7 @@ const ContactSection = () => {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all resize-none"
-                  placeholder="How can I help you?"
+                  placeholder="Como posso ajudá-lo?"
                   required
                 />
               </div>
@@ -174,7 +176,7 @@ const ContactSection = () => {
                 className="w-full sm:w-auto px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:glow-primary hover:scale-105 flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                Send Message
+                Enviar Mensagem
               </button>
             </form>
           </div>

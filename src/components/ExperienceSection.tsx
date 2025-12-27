@@ -3,35 +3,35 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Online English Teacher",
+      title: "Professor de Inglês Online",
       company: "Rose English School",
-      location: "Remote",
-      period: "March 2025 - Present",
-      description: "Teaching English online to students of various levels.",
+      location: "Remoto",
+      period: "Março 2025 - Presente",
+      description: "Ensino de inglês online para estudantes de vários níveis.",
       current: true,
     },
     {
-      title: "Founder & General Director",
+      title: "Fundador & Director Geral",
       company: "Open Mind Academy AO",
       location: "Angola",
-      period: "December 2023 - Present",
-      description: "Founded and currently direct a hybrid English academy, managing operations, curriculum development, and student engagement.",
+      period: "Dezembro 2023 - Presente",
+      description: "Fundei e dirijo actualmente uma academia de inglês híbrida, gerindo operações, desenvolvimento curricular e envolvimento de estudantes.",
       current: true,
     },
     {
-      title: "Deputy Academic Director & Course Coordinator",
+      title: "Director Académico Adjunto & Coordenador de Cursos",
       company: "Academia do Futuro",
       location: "Calumbo, Angola",
-      period: "September 2023 - June 2024",
-      description: "Served as Deputy Academic Director, Course Coordinator, and taught English and Primary School classes.",
+      period: "Setembro 2023 - Junho 2024",
+      description: "Servi como Director Académico Adjunto, Coordenador de Cursos, e leccionei Inglês e aulas do Ensino Primário.",
       current: false,
     },
     {
-      title: "English Teacher",
+      title: "Professor de Inglês",
       company: "André Class",
       location: "Angola",
-      period: "2022 - August 2023",
-      description: "Started as a trainee teacher and progressed to teaching English at the center where I first learned the language.",
+      period: "2022 - Agosto 2023",
+      description: "Comecei como professor estagiário e progredi para ensinar inglês no centro onde aprendi a língua pela primeira vez.",
       current: false,
     },
   ];
@@ -41,12 +41,12 @@ const ExperienceSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
-              Experience
+              Experiência
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Professional Journey
+              Percurso Profissional
             </h2>
           </div>
 
@@ -60,9 +60,10 @@ const ExperienceSection = () => {
               {experiences.map((item, index) => (
                 <div
                   key={`${item.company}-${item.title}`}
-                  className={`relative flex flex-col md:flex-row gap-8 ${
+                  className={`relative flex flex-col md:flex-row gap-8 animate-on-scroll ${
                     index % 2 === 0 ? "md:flex-row-reverse" : ""
                   }`}
+                  style={{ transitionDelay: `${index * 150}ms` }}
                 >
                   {/* Timeline Dot */}
                   <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full md:-translate-x-1/2 ring-4 ring-background z-10">
@@ -81,7 +82,7 @@ const ExperienceSection = () => {
                       {/* Badge */}
                       {item.current && (
                         <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-4">
-                          Current Position
+                          Posição Actual
                         </span>
                       )}
 
