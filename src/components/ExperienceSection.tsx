@@ -3,12 +3,20 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Founder & Manager",
+      company: "PixelShitZ",
+      location: "Luanda, Angola",
+      period: "September 2025 - Present",
+      description: "Founded and manage a t-shirt brand for Nerds, Otakus, Devs, Gamers, and Geeks. Overseeing product design, e-commerce operations, inventory management, and brand marketing.",
+      current: true,
+    },
+    {
       title: "Online English Teacher",
       company: "Rose English School",
       location: "Remote",
       period: "March 2025 - October 2025",
       description: "Deliver online English classes using digital platforms. Manage virtual classrooms, student follow-up, and learning materials. Maintain organized digital records of student progress.",
-      current: true,
+      current: false,
     },
     {
       title: "Founder & Administrative Manager",

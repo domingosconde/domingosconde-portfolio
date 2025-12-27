@@ -11,20 +11,12 @@ const ProjectsSection = () => {
       featured: true,
     },
     {
-      title: "Rose English School",
-      description: "Online English teaching using digital platforms. Managing virtual classrooms, student follow-up, and maintaining organized digital records of student progress.",
+      title: "PixelShitZ",
+      description: "A brand for selling t-shirts designed for Nerds, Otakus, Devs, Gamers, and Geeks. Managing product design, e-commerce operations, and brand marketing.",
       icon: Globe,
-      tags: ["Online Teaching", "Digital Platforms", "Remote"],
+      tags: ["E-commerce", "Fashion", "Geek Culture"],
       link: null,
-      featured: false,
-    },
-    {
-      title: "André Class",
-      description: "Administrative support and English teaching. Organizing student information, schedules, class materials, and supporting internal communication between staff and students.",
-      icon: Users,
-      tags: ["Administration", "Teaching", "Coordination"],
-      link: null,
-      featured: false,
+      featured: true,
     },
   ];
 
