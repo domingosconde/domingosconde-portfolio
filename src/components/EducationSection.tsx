@@ -5,7 +5,7 @@ const EducationSection = () => {
   const education = [
     {
       degree: "High School - Intermediate Course in Computer Science Management",
-      institution: "Complexo Escolar Privado de Intercâmbio Cultural Angola e China FENDA DA TUNDAVALA",
+      institution: "Complexo Escolar Privado de Intercâmbio Cultural Angola e China FENDA DA TUNDAVALA - Faixa e Rota",
       location: "Angola",
       period: "Ongoing",
       description:
