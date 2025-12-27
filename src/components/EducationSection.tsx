@@ -3,21 +3,21 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const EducationSection = () => {
   const education = [
     {
-      degree: "IT Management (Informática de Gestão)",
-      institution: "Currently Pursuing",
+      degree: "Informática de Gestão",
+      institution: "Em Curso",
       location: "Angola",
-      period: "Ongoing",
+      period: "Actualmente",
       description:
-        "Developing skills in management, business administration, and organizational leadership.",
+        "A desenvolver competências em gestão, administração de empresas e liderança organizacional.",
       current: true,
     },
     {
-      degree: "Elementary & Secondary Education (1st Cycle)",
-      institution: "School No. 5105, Calumbo",
+      degree: "Ensino Primário & Secundário (1º Ciclo)",
+      institution: "Escola Nº 5105, Calumbo",
       location: "Calumbo, Angola",
       period: "2017 - 2023",
       description:
-        "Completed 4th to 9th grade. Certifications: English B2 Level, Basic & Intermediate Computer Science, Pedagogy and Oratory for Teachers, Pedagogy for ESL Teachers, Music & Vocal Techniques, Oratory and Youth Leadership.",
+        "Completei da 4ª à 9ª classe. Certificações: Inglês Nível B2, Informática Básica & Intermédia, Pedagogia e Oratória para Professores, Pedagogia para Professores ESL, Música & Técnicas Vocais, Oratória e Liderança Juvenil.",
       current: false,
     },
   ];
@@ -27,12 +27,12 @@ const EducationSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
-              Education
+              Educação
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Academic Journey
+              Percurso Académico
             </h2>
           </div>
 
@@ -46,9 +46,10 @@ const EducationSection = () => {
               {education.map((item, index) => (
                 <div
                   key={item.degree}
-                  className={`relative flex flex-col md:flex-row gap-8 ${
+                  className={`relative flex flex-col md:flex-row gap-8 animate-on-scroll ${
                     index % 2 === 0 ? "md:flex-row-reverse" : ""
                   }`}
+                  style={{ transitionDelay: `${index * 150}ms` }}
                 >
                   {/* Timeline Dot */}
                   <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full md:-translate-x-1/2 ring-4 ring-background z-10">
@@ -67,7 +68,7 @@ const EducationSection = () => {
                       {/* Badge */}
                       {item.current && (
                         <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-4">
-                          Currently Studying
+                          A Estudar Actualmente
                         </span>
                       )}
 

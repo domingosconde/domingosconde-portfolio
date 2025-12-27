@@ -1,18 +1,18 @@
-import { Code2, Database, Globe, Users, MessageSquare, Lightbulb, Monitor, Palette } from "lucide-react";
+import { Code2, Globe, Users, MessageSquare, Lightbulb, Monitor, Palette, Brain } from "lucide-react";
 
 const SkillsSection = () => {
   const technicalSkills = [
     { name: "Microsoft 365 (Word, Excel, PowerPoint, Outlook)", level: 90, icon: Code2 },
     { name: "Google Ads & Meta Business Suite", level: 85, icon: Globe },
-    { name: "Design & Video (Canva, InShot, CapCut)", level: 80, icon: Palette },
-    { name: "HTML & CSS / Web Fundamentals", level: 70, icon: Monitor },
+    { name: "Design & Vídeo (Canva, InShot, CapCut)", level: 80, icon: Palette },
+    { name: "HTML & CSS / Fundamentos Web", level: 70, icon: Monitor },
   ];
 
   const softSkills = [
-    { name: "Public Speaking & Oratory", level: 95, icon: MessageSquare },
-    { name: "Youth Leadership & Team Coordination", level: 90, icon: Users },
-    { name: "Persuasion & Negotiation", level: 85, icon: Lightbulb },
-    { name: "Critical Thinking & Creativity", level: 88, icon: Database },
+    { name: "Oratória & Comunicação Pública", level: 95, icon: MessageSquare },
+    { name: "Liderança Juvenil & Coordenação de Equipas", level: 90, icon: Users },
+    { name: "Persuasão & Negociação", level: 85, icon: Lightbulb },
+    { name: "Pensamento Crítico & Criatividade", level: 88, icon: Brain },
   ];
 
   const SkillBar = ({
@@ -42,25 +42,25 @@ const SkillsSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-on-scroll">
             <span className="text-primary font-medium text-sm uppercase tracking-widest">
               Expertise
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Skills & Abilities
+              Competências & Habilidades
             </h2>
           </div>
 
           {/* Skills Grid */}
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
             {/* Technical Skills */}
-            <div className="space-y-8">
+            <div className="space-y-8 animate-on-scroll">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Code2 className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="font-display text-2xl font-semibold text-foreground">
-                  Technical Skills
+                  Competências Técnicas
                 </h3>
               </div>
               <div className="space-y-6 bg-card p-8 rounded-xl border border-border">
@@ -71,13 +71,13 @@ const SkillsSection = () => {
             </div>
 
             {/* Soft Skills */}
-            <div className="space-y-8">
+            <div className="space-y-8 animate-on-scroll" style={{ transitionDelay: "150ms" }}>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Users className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="font-display text-2xl font-semibold text-foreground">
-                  Soft Skills
+                  Competências Interpessoais
                 </h3>
               </div>
               <div className="space-y-6 bg-card p-8 rounded-xl border border-border">
@@ -89,22 +89,22 @@ const SkillsSection = () => {
           </div>
 
           {/* Additional Skills Tags */}
-          <div className="mt-16 text-center">
+          <div className="mt-16 text-center animate-on-scroll">
             <h4 className="text-lg font-medium text-foreground mb-6">
-              Also Familiar With
+              Também Familiarizado Com
             </h4>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "English (Fluent & Proficient)",
-                "Portuguese (Native)",
-                "Pedagogy for ESL Teachers",
-                "Internet Protocols",
-                "SEO & Content Strategy",
-                "Campaign Performance Analysis",
-                "Music & Vocal Techniques",
-                "Oratory & Youth Leadership",
-                "Basic Computer Science",
-                "Management (Ongoing)",
+                "Inglês (Fluente & Proficiente)",
+                "Português (Nativo)",
+                "Pedagogia para Professores ESL",
+                "Protocolos de Internet",
+                "SEO & Estratégia de Conteúdo",
+                "Análise de Performance de Campanhas",
+                "Música & Técnicas Vocais",
+                "Oratória & Liderança Juvenil",
+                "Ciência da Computação Básica",
+                "Gestão (Em Curso)",
               ].map((tag) => (
                 <span
                   key={tag}

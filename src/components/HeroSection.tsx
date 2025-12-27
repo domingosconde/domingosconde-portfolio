@@ -15,23 +15,23 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/50 rounded-full border border-primary/20 mb-8 opacity-0 animate-fade-up">
             <Code className="w-4 h-4 text-primary" />
             <span className="text-accent-foreground text-sm font-medium">
-              IT Management Student & English Teacher
+              Estudante de Gestão & Professor de Inglês
             </span>
             <BookOpen className="w-4 h-4 text-primary" />
           </div>
 
           {/* Main Title */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-accent-foreground mb-6 opacity-0 animate-fade-up delay-100">
-            Hello, I'm
+            Olá, eu sou o
             <span className="block text-gradient mt-2">Domingos Conde</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up delay-200 leading-relaxed">
-            Bridging the gap between{" "}
-            <span className="text-primary font-medium">technology</span> and{" "}
-            <span className="text-primary font-medium">education</span>.
-            Founder of Open Mind Academy AO, with expertise in IT Management and English Teaching.
+            Unindo a{" "}
+            <span className="text-primary font-medium">tecnologia</span> e a{" "}
+            <span className="text-primary font-medium">educação</span>.
+            Fundador da Open Mind Academy AO, com experiência em Gestão e Ensino de Inglês.
           </p>
 
           {/* CTA Buttons */}
@@ -40,13 +40,13 @@ const HeroSection = () => {
               href="#about"
               className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:glow-primary hover:scale-105"
             >
-              Discover More
+              Saber Mais
             </a>
             <a
               href="#contact"
               className="px-8 py-4 border border-accent-foreground/20 text-accent-foreground rounded-lg font-medium transition-all duration-300 hover:bg-accent-foreground/10"
             >
-              Get in Touch
+              Entrar em Contacto
             </a>
           </div>
         </div>
@@ -57,7 +57,7 @@ const HeroSection = () => {
             href="#about"
             className="flex flex-col items-center gap-2 text-accent-foreground/50 hover:text-primary transition-colors"
           >
-            <span className="text-xs uppercase tracking-widest">Scroll</span>
+            <span className="text-xs uppercase tracking-widest">Deslizar</span>
             <ArrowDown className="w-5 h-5 animate-float" />
           </a>
         </div>
