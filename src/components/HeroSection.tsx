@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/50 rounded-full border border-primary/20 mb-8 opacity-0 animate-fade-up">
             <Briefcase className="w-4 h-4 text-primary" />
             <span className="text-accent-foreground text-sm font-medium">
-              Tech Administrative Assistant
+              Project Manager
             </span>
           </div>
 
@@ -27,11 +27,12 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up delay-200 leading-relaxed">
-            Tech-oriented{" "}
-            <span className="text-primary font-medium">Administrative Assistant</span> with strong experience in{" "}
-            <span className="text-primary font-medium">Excel reporting</span> and{" "}
-            <span className="text-primary font-medium">IT support</span>.
-            Combining administrative rigor with solid understanding of technology.
+            Results-driven{" "}
+            <span className="text-primary font-medium">Project Manager</span> with experience in{" "}
+            <span className="text-primary font-medium">team leadership</span>,{" "}
+            <span className="text-primary font-medium">operations management</span>, and{" "}
+            <span className="text-primary font-medium">IT coordination</span>.
+            Turning ideas into structured, impactful projects.
           </p>
 
           {/* CTA Buttons */}

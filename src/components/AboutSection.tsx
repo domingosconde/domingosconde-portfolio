@@ -4,19 +4,19 @@ import profilePhoto from "@/assets/profile-photo.png";
 const AboutSection = () => {
   const highlights = [
     {
-      icon: FileSpreadsheet,
-      title: "Advanced Excel & Reporting",
-      description: "Spreadsheets, formulas, data organization, reports, and basic analysis",
+      icon: Laptop,
+      title: "Project & Operations Management",
+      description: "Planning, coordinating teams, managing workflows, and delivering results on time",
     },
     {
-      icon: Laptop,
-      title: "Microsoft 365 & Google Workspace",
-      description: "Proficient in Word, PowerPoint, Outlook, and Google productivity tools",
+      icon: FileSpreadsheet,
+      title: "Data & Reporting",
+      description: "Advanced Excel, data organization, reports, dashboards, and analysis",
     },
     {
       icon: Wrench,
-      title: "IT Support & Troubleshooting",
-      description: "PC hardware, software fundamentals, system setup, and basic maintenance",
+      title: "IT Coordination & Support",
+      description: "IT department management, system setup, troubleshooting, and digital platforms",
     },
     {
       icon: Languages,
@@ -35,7 +35,7 @@ const AboutSection = () => {
               About Me
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
-              Tech Meets Administration
+              Leadership Meets Technology
             </h2>
           </div>
 
@@ -57,24 +57,24 @@ const AboutSection = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I am a{" "}
                 <span className="text-foreground font-medium">
-                  Tech Administrative Assistant
+                  Project Manager
                 </span>{" "}
-                with strong experience in administrative operations, advanced Excel reporting, 
-                and hands-on IT support. Based in{" "}
+                with experience leading teams, managing operations, and coordinating IT departments. 
+                Based in{" "}
                 <span className="text-foreground font-medium">Calumbo Sede, Icolo e Bengo, Angola</span>.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I have proven ability to manage documentation, schedules, databases, 
-                and digital platforms while also providing basic computer maintenance 
-                and troubleshooting support.
+                I manage multiple projects simultaneously — from founding an English academy 
+                and a t-shirt brand to directing IT and finance departments at NGOs. 
+                I thrive on turning ideas into structured, impactful outcomes.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Currently pursuing a{" "}
                 <span className="text-foreground font-medium">
                   High School Intermediate Course in Computer Science Management
                 </span>{" "}
-                at Complexo Escolar Privado FENDA DA TUNDAVALA, combining administrative 
-                rigor with solid understanding of PC hardware, software, and productivity systems.
+                at Complexo Escolar Privado FENDA DA TUNDAVALA - Faixa e Rota, combining 
+                project management skills with solid technical knowledge.
               </p>
             </div>
 

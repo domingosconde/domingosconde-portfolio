@@ -3,6 +3,8 @@ import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
 import roseEnglishLogo from "@/assets/logos/roseenglish.jpg";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import andreClassLogo from "@/assets/logos/andreclass.png";
+import construAfricaLogo from "@/assets/logos/construafrica.jpg";
+import nodusLogo from "@/assets/logos/nodus.png";
 
 const ExperienceSection = () => {
   const experiences = [
@@ -14,6 +16,33 @@ const ExperienceSection = () => {
       description: "Founded and manage a t-shirt brand for Nerds, Otakus, Devs, Gamers, and Geeks. Overseeing product design, e-commerce operations, inventory management, and brand marketing.",
       current: true,
       logo: pixelShitzLogo,
+    },
+    {
+      title: "Director of IT & Communication / Finance",
+      company: "Fundação ConstruÁfrica",
+      location: "Angola",
+      period: "2025 - Present",
+      description: "Directing the IT & Communication department and the Finance department at this NGO. Managing digital infrastructure, internal communications, financial reporting, and organizational strategy.",
+      current: true,
+      logo: construAfricaLogo,
+    },
+    {
+      title: "Founder",
+      company: "Comunidade NÓDUS English Speak",
+      location: "Angola",
+      period: "2025 - Present",
+      description: "Founded a community-driven NGO helping young people speak English with greater confidence through community-based learning, practice sessions, and peer support.",
+      current: true,
+      logo: nodusLogo,
+    },
+    {
+      title: "Co-Founder & Manager/Agent",
+      company: "Sacamadesso Lirical",
+      location: "Angola",
+      period: "2025 - Present",
+      description: "Co-founded and manage a community of local musicians (Rap, RnB, Trap, Pop, Afrobeat). Handling paperwork, social media management, and artist coordination.",
+      current: true,
+      logo: null,
     },
     {
       title: "Online English Teacher",
@@ -95,13 +124,21 @@ const ExperienceSection = () => {
                       )}
 
                       {/* Company Logo */}
-                      <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 overflow-hidden bg-white border border-border">
-                        <img 
-                          src={item.logo} 
-                          alt={`${item.company} logo`}
-                          className="w-full h-full object-contain p-1"
-                        />
-                      </div>
+                      {item.logo ? (
+                        <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 overflow-hidden bg-white border border-border">
+                          <img 
+                            src={item.logo} 
+                            alt={`${item.company} logo`}
+                            className="w-full h-full object-contain p-1"
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 bg-primary/10 border border-border">
+                          <span className="text-primary font-bold text-lg">
+                            {item.company.charAt(0)}
+                          </span>
+                        </div>
+                      )}
 
                       {/* Title */}
                       <h3 className="font-display text-xl font-semibold text-foreground mb-2">
