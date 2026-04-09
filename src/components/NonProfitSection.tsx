@@ -1,0 +1,90 @@
+import { Heart, ExternalLink } from "lucide-react";
+import construAfricaLogo from "@/assets/logos/construafrica.jpg";
+import nodusLogo from "@/assets/logos/nodus.png";
+
+const NonProfitSection = () => {
+  const organizations = [
+    {
+      name: "Comunidade NÓDUS English Speak",
+      role: "Founder",
+      description:
+        "A community-driven NGO helping young people speak English with greater confidence. Through community-based learning, practice sessions, and peer support, we create a safe space for language growth.",
+      logo: nodusLogo,
+      current: true,
+    },
+    {
+      name: "Fundação ConstruÁfrica",
+      role: "Director of IT & Communication / Finance",
+      description:
+        "An NGO focused on social development in Africa. I direct both the IT & Communication department and the Finance department, managing digital infrastructure, communications strategy, and financial operations.",
+      logo: construAfricaLogo,
+      current: true,
+    },
+  ];
+
+  return (
+    <section id="nonprofit" className="py-24 md:py-32 bg-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16 animate-on-scroll">
+            <span className="text-primary font-medium text-sm uppercase tracking-widest">
+              Social Impact
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
+              Non-Profit Organizations
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+              Organizations where I contribute my skills to create positive social impact
+            </p>
+          </div>
+
+          {/* Organizations Grid */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {organizations.map((org, index) => (
+              <div
+                key={org.name}
+                className="group relative p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-elegant hover:-translate-y-2 animate-on-scroll"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {/* Current Badge */}
+                {org.current && (
+                  <div className="absolute -top-3 -right-3 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full flex items-center gap-1">
+                    <Heart className="w-3 h-3" />
+                    Active
+                  </div>
+                )}
+
+                {/* Logo */}
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden bg-white border border-border">
+                  <img
+                    src={org.logo}
+                    alt={`${org.name} logo`}
+                    className="w-full h-full object-contain p-2"
+                  />
+                </div>
+
+                {/* Role */}
+                <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-3">
+                  {org.role}
+                </span>
+
+                {/* Name */}
+                <h3 className="font-display text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                  {org.name}
+                </h3>
+
+                {/* Description */}
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {org.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default NonProfitSection;
