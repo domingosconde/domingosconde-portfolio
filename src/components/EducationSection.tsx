@@ -1,5 +1,7 @@
-import { Calendar, MapPin, GraduationCap, Languages, Code2 } from "lucide-react";
+import { Calendar, MapPin, GraduationCap, Languages, Code2, CheckCircle2, Circle } from "lucide-react";
 import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
+import luanda42Logo from "@/assets/logos/42luanda.png";
+import confucioLogo from "@/assets/logos/confucio.png";
 
 const EducationSection = () => {
   const education = [
@@ -14,14 +16,19 @@ const EducationSection = () => {
       logo: fendaTundavalaLogo,
     },
     {
-      degree: "Software Engineering - Piscine C",
+      degree: "Admissions Journey - Software Engineering",
       institution: "42 Luanda",
       location: "Luanda, Angola",
       period: "Ongoing",
       description:
-        "Currently in the Piscine C after successfully passing the Discovery Piscine Web. Intensive peer-to-peer learning program focused on problem solving, algorithms, and software engineering fundamentals.",
+        "Currently competing for a student spot at 42 Luanda through their selective admissions process. Progressing through intensive peer-to-peer challenges focused on problem solving, algorithms, and software engineering fundamentals.",
       current: true,
-      icon: Code2,
+      logo: luanda42Logo,
+      timeline: [
+        { label: "Discovery Piscine Web", status: "completed" as const },
+        { label: "Piscine C", status: "current" as const },
+        { label: "Student Selection", status: "upcoming" as const },
+      ],
     },
     {
       degree: "Mandarin Chinese - HSK 1",
@@ -31,7 +38,7 @@ const EducationSection = () => {
       description:
         "Studying Mandarin Chinese at HSK 1 level, building foundational skills in speaking, reading, writing, and cultural understanding.",
       current: true,
-      icon: Languages,
+      logo: confucioLogo,
     },
   ];
 
@@ -87,15 +94,11 @@ const EducationSection = () => {
 
                       {/* Institution Logo */}
                       <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 overflow-hidden bg-white border border-border">
-                        {item.logo ? (
-                          <img
-                            src={item.logo}
-                            alt={`${item.institution} logo`}
-                            className="w-full h-full object-contain p-1"
-                          />
-                        ) : item.icon ? (
-                          <item.icon className="w-7 h-7 text-primary" />
-                        ) : null}
+                        <img
+                          src={item.logo}
+                          alt={`${item.institution} logo`}
+                          className="w-full h-full object-contain p-1"
+                        />
                       </div>
 
                       {/* Title */}
@@ -124,6 +127,51 @@ const EducationSection = () => {
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         {item.description}
                       </p>
+
+                      {/* Micro Timeline (e.g., 42 admissions journey) */}
+                      {"timeline" in item && item.timeline && (
+                        <div className="mt-5 pt-5 border-t border-border">
+                          <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">
+                            Journey
+                          </p>
+                          <div className="flex items-center gap-2">
+                            {item.timeline.map((step, i) => (
+                              <div key={step.label} className="flex items-center gap-2 flex-1">
+                                <div className="flex flex-col items-center gap-1.5 flex-1">
+                                  {step.status === "completed" ? (
+                                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                                  ) : step.status === "current" ? (
+                                    <div className="relative">
+                                      <Circle className="w-5 h-5 text-primary fill-primary/20" />
+                                      <div className="absolute inset-0 rounded-full bg-primary animate-ping opacity-40" />
+                                    </div>
+                                  ) : (
+                                    <Circle className="w-5 h-5 text-muted-foreground/40" />
+                                  )}
+                                  <span
+                                    className={`text-[10px] text-center leading-tight ${
+                                      step.status === "upcoming"
+                                        ? "text-muted-foreground/60"
+                                        : "text-foreground font-medium"
+                                    }`}
+                                  >
+                                    {step.label}
+                                  </span>
+                                </div>
+                                {i < item.timeline.length - 1 && (
+                                  <div
+                                    className={`h-px flex-1 -mt-4 ${
+                                      step.status === "completed"
+                                        ? "bg-primary"
+                                        : "bg-border"
+                                    }`}
+                                  />
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

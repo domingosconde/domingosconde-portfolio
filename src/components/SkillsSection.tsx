@@ -8,6 +8,8 @@ const SkillsSection = () => {
     { name: "PC Hardware & Software Fundamentals", level: 80, icon: Code2 },
     { name: "Basic Computer Maintenance & Troubleshooting", level: 75, icon: Monitor },
     { name: "HTML & CSS (Basic)", level: 70, icon: Code2 },
+    { name: "C Programming Fundamentals (42 Piscine)", level: 65, icon: Code2 },
+    { name: "Web Development Fundamentals (42 Discovery)", level: 70, icon: Globe },
   ];
 
   const softSkills = [
@@ -18,6 +20,8 @@ const SkillsSection = () => {
     { name: "Attention to Detail & Accuracy", level: 92, icon: Eye },
     { name: "Problem Solving & Operational Support", level: 85, icon: Lightbulb },
     { name: "Confidentiality & Professional Ethics", level: 95, icon: ShieldCheck },
+    { name: "Peer-to-Peer Learning & Collaboration (42 Method)", level: 85, icon: Users },
+    { name: "Algorithmic Thinking & Problem Solving", level: 75, icon: Lightbulb },
   ];
 
   const SkillBar = ({
@@ -102,6 +106,7 @@ const SkillsSection = () => {
               {[
                 "English (Upper Intermediate B2)",
                 "Portuguese (Native)",
+                "Mandarin Chinese (HSK 1 - Beginner)",
                 "Internet Protocols & Web Fundamentals",
                 "Digital File Organization",
                 "Data Management",
