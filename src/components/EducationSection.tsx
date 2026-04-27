@@ -1,5 +1,7 @@
-import { Calendar, MapPin, GraduationCap, Languages, Code2 } from "lucide-react";
+import { Calendar, MapPin, GraduationCap, Languages, Code2, CheckCircle2, Circle } from "lucide-react";
 import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
+import luanda42Logo from "@/assets/logos/42luanda.png";
+import confucioLogo from "@/assets/logos/confucio.png";
 
 const EducationSection = () => {
   const education = [
@@ -14,14 +16,19 @@ const EducationSection = () => {
       logo: fendaTundavalaLogo,
     },
     {
-      degree: "Software Engineering - Piscine C",
+      degree: "Admissions Journey - Software Engineering",
       institution: "42 Luanda",
       location: "Luanda, Angola",
       period: "Ongoing",
       description:
-        "Currently in the Piscine C after successfully passing the Discovery Piscine Web. Intensive peer-to-peer learning program focused on problem solving, algorithms, and software engineering fundamentals.",
+        "Currently competing for a student spot at 42 Luanda through their selective admissions process. Progressing through intensive peer-to-peer challenges focused on problem solving, algorithms, and software engineering fundamentals.",
       current: true,
-      icon: Code2,
+      logo: luanda42Logo,
+      timeline: [
+        { label: "Discovery Piscine Web", status: "completed" as const },
+        { label: "Piscine C", status: "current" as const },
+        { label: "Student Selection", status: "upcoming" as const },
+      ],
     },
     {
       degree: "Mandarin Chinese - HSK 1",
@@ -31,7 +38,7 @@ const EducationSection = () => {
       description:
         "Studying Mandarin Chinese at HSK 1 level, building foundational skills in speaking, reading, writing, and cultural understanding.",
       current: true,
-      icon: Languages,
+      logo: confucioLogo,
     },
   ];
 
