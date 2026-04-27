@@ -87,11 +87,15 @@ const EducationSection = () => {
 
                       {/* Institution Logo */}
                       <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 overflow-hidden bg-white border border-border">
-                        <img 
-                          src={item.logo} 
-                          alt={`${item.institution} logo`}
-                          className="w-full h-full object-contain p-1"
-                        />
+                        {item.logo ? (
+                          <img
+                            src={item.logo}
+                            alt={`${item.institution} logo`}
+                            className="w-full h-full object-contain p-1"
+                          />
+                        ) : item.icon ? (
+                          <item.icon className="w-7 h-7 text-primary" />
+                        ) : null}
                       </div>
 
                       {/* Title */}
