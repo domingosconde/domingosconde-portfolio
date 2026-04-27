@@ -1,4 +1,4 @@
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, GraduationCap, Languages, Code2 } from "lucide-react";
 import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
 
 const EducationSection = () => {
@@ -12,6 +12,26 @@ const EducationSection = () => {
         "Developing skills in management, business administration, and organizational leadership with a focus on computer science.",
       current: true,
       logo: fendaTundavalaLogo,
+    },
+    {
+      degree: "Software Engineering - Piscine C",
+      institution: "42 Luanda",
+      location: "Luanda, Angola",
+      period: "Ongoing",
+      description:
+        "Currently in the Piscine C after successfully passing the Discovery Piscine Web. Intensive peer-to-peer learning program focused on problem solving, algorithms, and software engineering fundamentals.",
+      current: true,
+      icon: Code2,
+    },
+    {
+      degree: "Mandarin Chinese - HSK 1",
+      institution: "Instituto Confúcio na Universidade Agostinho Neto",
+      location: "Luanda, Angola",
+      period: "Ongoing",
+      description:
+        "Studying Mandarin Chinese at HSK 1 level, building foundational skills in speaking, reading, writing, and cultural understanding.",
+      current: true,
+      icon: Languages,
     },
   ];
 
