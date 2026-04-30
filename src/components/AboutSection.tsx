@@ -1,4 +1,4 @@
-import { Laptop, Languages, FileSpreadsheet, Wrench } from "lucide-react";
+import { Laptop, Languages, FileSpreadsheet, Wrench, Users, Rocket, Code2, Megaphone } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.png";
 
 const AboutSection = () => {
@@ -7,6 +7,16 @@ const AboutSection = () => {
       icon: Laptop,
       title: "Project & Operations Management",
       description: "Planning, coordinating teams, managing workflows, and delivering results on time",
+    },
+    {
+      icon: Rocket,
+      title: "Founder & Entrepreneur",
+      description: "Founded Open Mind Academy AO, PixelShitZ, and NÓDUS English Speak community",
+    },
+    {
+      icon: Users,
+      title: "NGO Leadership",
+      description: "Director of IT, Communication & Finance departments at Fundação ConstruÁfrica",
     },
     {
       icon: FileSpreadsheet,
@@ -19,9 +29,19 @@ const AboutSection = () => {
       description: "IT department management, system setup, troubleshooting, and digital platforms",
     },
     {
+      icon: Megaphone,
+      title: "Brand & Community Building",
+      description: "Social media management, brand identity, and growing engaged communities",
+    },
+    {
+      icon: Code2,
+      title: "Tech & Programming Foundations",
+      description: "C programming and web development fundamentals through 42 Luanda Piscines",
+    },
+    {
       icon: Languages,
-      title: "Bilingual Professional",
-      description: "Native Portuguese speaker with Upper Intermediate English (B2)",
+      title: "Multilingual Professional",
+      description: "Native Portuguese, Upper Intermediate English (B2), and learning Mandarin (HSK 1)",
     },
   ];
 
