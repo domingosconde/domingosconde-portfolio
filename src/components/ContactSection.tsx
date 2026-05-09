@@ -8,7 +8,9 @@ const contactSchema = z.object({
   name: z.string().trim().min(1, "Please enter your name").max(100, "Name is too long"),
   email: z.string().trim().email("Please enter a valid email").max(255, "Email is too long"),
   message: z.string().trim().min(1, "Please enter a message").max(2000, "Message is too long (max 2000 characters)"),
-}) satisfies z.ZodType<{ name: string; email: string; message: string }>;
+});
+
+type ContactInput = { name: string; email: string; message: string };
 
 const ContactSection = () => {
   const { toast } = useToast();
