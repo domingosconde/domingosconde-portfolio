@@ -38,7 +38,7 @@ const ContactSection = () => {
     try {
       const { error } = await supabase
         .from("contact_submissions")
-        .insert(parsed.data);
+        .insert(parsed.data as ContactInput);
 
       if (error) throw error;
 
