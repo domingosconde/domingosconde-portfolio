@@ -218,10 +218,11 @@ const ContactSection = () => {
               </div>
               <button
                 type="submit"
-                className="w-full sm:w-auto px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:glow-primary hover:scale-105 flex items-center justify-center gap-2"
+                disabled={submitting}
+                className="w-full sm:w-auto px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:glow-primary hover:scale-105 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 <Send className="w-4 h-4" />
-                Send Message
+                {submitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
