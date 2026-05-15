@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        sans: ['"Source Sans 3"', 'sans-serif'],
+        display: ['"Ubuntu"', 'sans-serif'],
+        sans: ['"Ubuntu"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
