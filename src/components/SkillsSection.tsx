@@ -1,50 +1,121 @@
 import { FileSpreadsheet, Monitor, Code2, Globe, Users, MessageSquare, Clock, Eye, ShieldCheck, Lightbulb } from "lucide-react";
 
+type Level = "Beginner" | "Intermediate" | "Advanced";
+
+interface HardSkill {
+  name: string;
+  level: Level;
+  years?: string;
+  context: string;
+  icon: React.ElementType;
+}
+
+interface SoftSkill {
+  name: string;
+  description: string;
+  icon: React.ElementType;
+}
+
 const SkillsSection = () => {
-  const technicalSkills = [
-    { name: "Microsoft Excel (Advanced)", level: 95, icon: FileSpreadsheet },
-    { name: "Microsoft 365 (Word, PowerPoint, Outlook)", level: 90, icon: Monitor },
-    { name: "Google Workspace Tools", level: 85, icon: Globe },
-    { name: "PC Hardware & Software Fundamentals", level: 80, icon: Code2 },
-    { name: "Basic Computer Maintenance & Troubleshooting", level: 75, icon: Monitor },
-    { name: "HTML & CSS (Basic)", level: 70, icon: Code2 },
-    { name: "C Programming Fundamentals (42 Piscine)", level: 65, icon: Code2 },
-    { name: "Web Development Fundamentals (42 Discovery)", level: 70, icon: Globe },
+  const hardSkills: HardSkill[] = [
+    {
+      name: "Microsoft Excel",
+      level: "Advanced",
+      years: "5+ years",
+      context: "Daily use for student records, financial tracking and operational reporting at Open Mind Academy.",
+      icon: FileSpreadsheet,
+    },
+    {
+      name: "Microsoft 365 (Word, PowerPoint, Outlook)",
+      level: "Advanced",
+      years: "5+ years",
+      context: "Documentation, institutional presentations and academic communication.",
+      icon: Monitor,
+    },
+    {
+      name: "Google Workspace",
+      level: "Advanced",
+      years: "4+ years",
+      context: "Collaborative docs, shared drives and forms used across academy operations.",
+      icon: Globe,
+    },
+    {
+      name: "PC Hardware & Maintenance",
+      level: "Intermediate",
+      years: "3+ years",
+      context: "Setup and troubleshooting of academy workstations and personal devices.",
+      icon: Monitor,
+    },
+    {
+      name: "HTML & CSS",
+      level: "Intermediate",
+      context: "Static pages and small layouts; foundation for ongoing web development studies.",
+      icon: Code2,
+    },
+    {
+      name: "C Programming Fundamentals",
+      level: "Beginner",
+      context: "Completed the 42 Piscine — pointers, memory, recursion and Unix basics.",
+      icon: Code2,
+    },
+    {
+      name: "Web Development Fundamentals",
+      level: "Intermediate",
+      context: "42 Discovery curriculum: HTTP, DOM, JavaScript basics and project structure.",
+      icon: Globe,
+    },
   ];
 
-  const softSkills = [
-    { name: "Administrative Organization & Documentation", level: 95, icon: Users },
-    { name: "Data Management & Reporting", level: 90, icon: FileSpreadsheet },
-    { name: "Professional Communication", level: 90, icon: MessageSquare },
-    { name: "Time Management & Task Prioritization", level: 88, icon: Clock },
-    { name: "Attention to Detail & Accuracy", level: 92, icon: Eye },
-    { name: "Problem Solving & Operational Support", level: 85, icon: Lightbulb },
-    { name: "Confidentiality & Professional Ethics", level: 95, icon: ShieldCheck },
-    { name: "Peer-to-Peer Learning & Collaboration (42 Method)", level: 85, icon: Users },
-    { name: "Algorithmic Thinking & Problem Solving", level: 75, icon: Lightbulb },
+  const softSkills: SoftSkill[] = [
+    {
+      name: "Administrative Organization",
+      description:
+        "Builds clear documentation structures and keeps records consistent across long-running operations.",
+      icon: Users,
+    },
+    {
+      name: "Conscientiousness & Attention to Detail",
+      description:
+        "High accuracy in data entry, reporting and review — a defining trait in day-to-day academy management.",
+      icon: Eye,
+    },
+    {
+      name: "Professional Communication",
+      description:
+        "Clear written and spoken exchanges with students, parents, partners and institutional contacts.",
+      icon: MessageSquare,
+    },
+    {
+      name: "Time Management",
+      description:
+        "Plans recurring tasks, anticipates deadlines and balances administrative load with project work.",
+      icon: Clock,
+    },
+    {
+      name: "Problem Solving",
+      description:
+        "Analytical approach to operational issues; breaks problems down before acting and documents the fix.",
+      icon: Lightbulb,
+    },
+    {
+      name: "Confidentiality & Professional Ethics",
+      description:
+        "Handles student data and internal information with discretion and a strong sense of responsibility.",
+      icon: ShieldCheck,
+    },
+    {
+      name: "Collaboration (42 Peer-to-Peer)",
+      description:
+        "Comfortable learning and building alongside peers, giving and receiving structured feedback.",
+      icon: Users,
+    },
   ];
 
-  const SkillBar = ({
-    skill,
-  }: {
-    skill: { name: string; level: number; icon: React.ElementType };
-  }) => (
-    <div className="space-y-3">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <skill.icon className="w-5 h-5 text-primary" />
-          <span className="font-medium text-foreground">{skill.name}</span>
-        </div>
-        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-      </div>
-      <div className="h-2 bg-muted rounded-full overflow-hidden">
-        <div
-          className="h-full bg-gradient-to-r from-primary to-primary/70 rounded-full transition-all duration-1000 ease-out"
-          style={{ width: `${skill.level}%` }}
-        />
-      </div>
-    </div>
-  );
+  const levelStyles: Record<Level, string> = {
+    Beginner: "bg-muted text-muted-foreground border-border",
+    Intermediate: "bg-primary/10 text-primary border-primary/30",
+    Advanced: "bg-primary text-primary-foreground border-primary",
+  };
 
   return (
     <section id="skills" className="py-24 md:py-32 bg-muted/30">
@@ -58,13 +129,15 @@ const SkillsSection = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4">
               Skills & Competencies
             </h2>
+            <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+              A qualitative view of my technical toolkit and the behavioural traits I bring to every project.
+            </p>
           </div>
 
-          {/* Skills Grid */}
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-            {/* Technical Skills */}
-            <div className="space-y-8 animate-on-scroll">
-              <div className="flex items-center gap-3 mb-6">
+            {/* Hard Skills */}
+            <div className="space-y-6 animate-on-scroll">
+              <div className="flex items-center gap-3 mb-2">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Code2 className="w-5 h-5 text-primary" />
                 </div>
@@ -72,47 +145,76 @@ const SkillsSection = () => {
                   Technical Skills
                 </h3>
               </div>
-              <div className="space-y-6 bg-card p-8 rounded-xl border border-border">
-                {technicalSkills.map((skill) => (
-                  <SkillBar key={skill.name} skill={skill} />
+              <div className="space-y-4">
+                {hardSkills.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className="bg-card p-5 rounded-xl border border-border hover:border-primary/40 transition-colors"
+                  >
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <div className="flex items-center gap-3">
+                        <skill.icon className="w-5 h-5 text-primary shrink-0" />
+                        <span className="font-medium text-foreground">{skill.name}</span>
+                      </div>
+                      <span
+                        className={`text-xs font-medium px-2.5 py-1 rounded-full border whitespace-nowrap ${levelStyles[skill.level]}`}
+                      >
+                        {skill.level}
+                      </span>
+                    </div>
+                    {skill.years && (
+                      <p className="text-xs text-muted-foreground mb-1 ml-8">{skill.years}</p>
+                    )}
+                    <p className="text-sm text-muted-foreground leading-relaxed ml-8">
+                      {skill.context}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
 
             {/* Soft Skills */}
-            <div className="space-y-8 animate-on-scroll" style={{ transitionDelay: "150ms" }}>
-              <div className="flex items-center gap-3 mb-6">
+            <div className="space-y-6 animate-on-scroll" style={{ transitionDelay: "150ms" }}>
+              <div className="flex items-center gap-3 mb-2">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Users className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="font-display text-2xl font-semibold text-foreground">
-                  Administrative & Soft Skills
+                  Behavioural Profile
                 </h3>
               </div>
-              <div className="space-y-6 bg-card p-8 rounded-xl border border-border">
+              <div className="space-y-4">
                 {softSkills.map((skill) => (
-                  <SkillBar key={skill.name} skill={skill} />
+                  <div
+                    key={skill.name}
+                    className="bg-card p-5 rounded-xl border border-border hover:border-primary/40 transition-colors"
+                  >
+                    <div className="flex items-center gap-3 mb-2">
+                      <skill.icon className="w-5 h-5 text-primary shrink-0" />
+                      <span className="font-medium text-foreground">{skill.name}</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed ml-8">
+                      {skill.description}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Additional Skills Tags */}
-          <div className="mt-16 text-center animate-on-scroll">
-            <h4 className="text-lg font-medium text-foreground mb-6">
-              Also Familiar With
+          {/* Languages & Additional Context */}
+          <div className="mt-16 animate-on-scroll">
+            <h4 className="text-center text-lg font-medium text-foreground mb-6">
+              Languages & Additional Context
             </h4>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "English (Upper Intermediate B2)",
-                "Portuguese (Native)",
-                "Mandarin Chinese (HSK 1 - Beginner)",
-                "Internet Protocols & Web Fundamentals",
-                "Digital File Organization",
-                "Data Management",
-                "Educational Environments",
-                "Digital Platforms",
-                "Strong Adaptability to New Software",
+                "Portuguese — Native",
+                "English — B2 Upper Intermediate",
+                "Mandarin Chinese — HSK 1 (Beginner)",
+                "Educational environments",
+                "Digital file organization",
+                "Strong adaptability to new software",
               ].map((tag) => (
                 <span
                   key={tag}
