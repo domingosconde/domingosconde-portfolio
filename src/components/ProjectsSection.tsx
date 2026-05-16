@@ -6,6 +6,14 @@ import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Bee Core System",
+      description: "Brand dedicated to digital automation support and social media management for businesses and individuals. Tagline: \"Less effort, more systems. Digital solutions to automate and scale your business.\"",
+      image: beeCoreLogo,
+      tags: ["Automation", "Social Media", "Digital Strategy"],
+      link: null,
+      featured: true,
+    },
+    {
       title: "Open Mind Academy AO",
       description: "Hybrid English academy that I founded and manage. Managing daily administrative operations including student records, scheduling, documentation, and internal coordination.",
       image: openMindLogo,
