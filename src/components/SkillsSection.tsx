@@ -64,6 +64,12 @@ const SkillsSection = () => {
       context: "42 Discovery curriculum: HTTP, DOM, JavaScript basics and project structure.",
       icon: Globe,
     },
+    {
+      name: "Digital Automation & Social Media Management",
+      level: "Intermediate",
+      context: "Designing automation workflows and managing social channels for clients through Bee Core System.",
+      icon: Globe,
+    },
   ];
 
   const softSkills: SoftSkill[] = [
