@@ -5,6 +5,7 @@ import openMindLogo from "@/assets/logos/openmindacademy.png";
 import andreClassLogo from "@/assets/logos/andreclass.png";
 import construAfricaLogo from "@/assets/logos/construafrica.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
+import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 
 const ExperienceSection = () => {
   const experiences = [
