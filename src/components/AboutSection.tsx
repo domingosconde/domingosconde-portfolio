@@ -11,7 +11,7 @@ const AboutSection = () => {
     {
       icon: Rocket,
       title: "Founder & Entrepreneur",
-      description: "Founded Open Mind Academy AO, PixelShitZ, and NÓDUS English Speak community",
+      description: "Founded Bee Core System, Open Mind Academy AO, PixelShitZ, and NÓDUS English Speak community",
     },
     {
       icon: Users,
