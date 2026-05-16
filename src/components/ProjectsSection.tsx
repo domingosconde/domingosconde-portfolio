@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
+import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 
 const ProjectsSection = () => {
   const projects = [
