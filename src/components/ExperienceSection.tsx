@@ -10,6 +10,15 @@ import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Founder & CEO",
+      company: "Bee Core System",
+      location: "Angola",
+      period: "May 2026 - Present",
+      description: "Founded a brand dedicated to digital automation and social media management for companies and individuals. Tagline: \"Less effort, more systems. Digital solutions to automate and scale your business.\" Leading strategy, service design, client onboarding, and automation workflows.",
+      current: true,
+      logo: beeCoreLogo,
+    },
+    {
       title: "Founder & Manager",
       company: "PixelShitZ",
       location: "Luanda, Angola",
