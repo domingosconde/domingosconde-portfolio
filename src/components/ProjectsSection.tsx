@@ -1,9 +1,18 @@
 import { ExternalLink } from "lucide-react";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
+import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 
 const ProjectsSection = () => {
   const projects = [
+    {
+      title: "Bee Core System",
+      description: "Brand dedicated to digital automation support and social media management for businesses and individuals. Tagline: \"Less effort, more systems. Digital solutions to automate and scale your business.\"",
+      image: beeCoreLogo,
+      tags: ["Automation", "Social Media", "Digital Strategy"],
+      link: null,
+      featured: true,
+    },
     {
       title: "Open Mind Academy AO",
       description: "Hybrid English academy that I founded and manage. Managing daily administrative operations including student records, scheduling, documentation, and internal coordination.",
@@ -40,7 +49,7 @@ const ProjectsSection = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.title}

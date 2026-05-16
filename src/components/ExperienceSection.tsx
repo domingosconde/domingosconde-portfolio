@@ -5,9 +5,19 @@ import openMindLogo from "@/assets/logos/openmindacademy.png";
 import andreClassLogo from "@/assets/logos/andreclass.png";
 import construAfricaLogo from "@/assets/logos/construafrica.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
+import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 
 const ExperienceSection = () => {
   const experiences = [
+    {
+      title: "Founder & CEO",
+      company: "Bee Core System",
+      location: "Angola",
+      period: "May 2026 - Present",
+      description: "Founded a brand dedicated to digital automation and social media management for companies and individuals. Tagline: \"Less effort, more systems. Digital solutions to automate and scale your business.\" Leading strategy, service design, client onboarding, and automation workflows.",
+      current: true,
+      logo: beeCoreLogo,
+    },
     {
       title: "Founder & Manager",
       company: "PixelShitZ",
