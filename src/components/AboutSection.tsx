@@ -81,20 +81,12 @@ const AboutSection = () => {
                 </span>{" "}
                 with experience leading teams, managing operations, and coordinating IT departments. 
                 Based in{" "}
-                <span className="text-foreground font-medium">Calumbo Sede, Icolo e Bengo, Angola</span>.
+                <span className="text-foreground font-medium">Luanda, Angola</span>.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I manage multiple projects simultaneously — from founding an English academy 
                 and a t-shirt brand to directing IT and finance departments at NGOs. 
                 I thrive on turning ideas into structured, impactful outcomes.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Currently pursuing a{" "}
-                <span className="text-foreground font-medium">
-                  High School Intermediate Course in Computer Science Management
-                </span>{" "}
-                at Complexo Escolar Privado FENDA DA TUNDAVALA - Faixa e Rota, combining 
-                project management skills with solid technical knowledge.
               </p>
             </div>
 
