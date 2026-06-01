@@ -28,8 +28,36 @@ async function sha1(s: string) {
     .join("");
 }
 
+const ALLOWED_ORIGIN_SUFFIXES = [
+  ".lovable.app",
+  ".lovable.dev",
+  ".lovableproject.com",
+  "localhost",
+];
+
+function isAllowedOrigin(req: Request): boolean {
+  const origin = req.headers.get("origin") || req.headers.get("referer") || "";
+  if (!origin) return false;
+  try {
+    const host = new URL(origin).hostname;
+    return ALLOWED_ORIGIN_SUFFIXES.some(
+      (s) => host === s.replace(/^\./, "") || host.endsWith(s),
+    );
+  } catch {
+    return false;
+  }
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
+
+  if (!isAllowedOrigin(req)) {
+    return new Response(JSON.stringify({ error: "Forbidden" }), {
+      status: 403,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+
 
   try {
     const { lang, texts } = await req.json();
