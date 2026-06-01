@@ -39,6 +39,18 @@ Deno.serve(async (req) => {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
+    if (texts.length > 100) {
+      return new Response(JSON.stringify({ error: "Too many texts" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    if (texts.some((t: unknown) => typeof t !== "string" || (t as string).length > 500)) {
+      return new Response(JSON.stringify({ error: "Invalid text entry" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
 
     if (lang === "en") {
       return new Response(
