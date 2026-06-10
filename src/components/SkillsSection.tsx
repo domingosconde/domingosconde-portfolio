@@ -216,7 +216,7 @@ const SkillsSection = () => {
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 "Portuguese — Native",
-                "English — B2 Upper Intermediate",
+                "English — C1 Advanced",
                 "Mandarin Chinese — HSK 1 (Beginner)",
                 "Educational environments",
                 "Digital file organization",
