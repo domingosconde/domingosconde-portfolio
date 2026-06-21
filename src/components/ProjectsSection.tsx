@@ -1,14 +1,25 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 
+type Project = {
+  title: string;
+  description: string;
+  image: string | null;
+  icon: React.ElementType | null;
+  tags: string[];
+  link: string | null;
+  featured: boolean;
+};
+
 const ProjectsSection = () => {
-  const projects = [
+  const projects: Project[] = [
     {
       title: "Bee Core System",
       description: "Brand dedicated to digital automation support and social media management for businesses and individuals. Tagline: \"Less effort, more systems. Digital solutions to automate and scale your business.\"",
       image: beeCoreLogo,
+      icon: null,
       tags: ["Automation", "Social Media", "Digital Strategy"],
       link: null,
       featured: true,
@@ -17,6 +28,7 @@ const ProjectsSection = () => {
       title: "Open Mind Academy AO",
       description: "Hybrid English academy that I founded and manage. Managing daily administrative operations including student records, scheduling, documentation, and internal coordination.",
       image: openMindLogo,
+      icon: null,
       tags: ["Education", "Administration", "Management"],
       link: null,
       featured: true,
@@ -25,9 +37,19 @@ const ProjectsSection = () => {
       title: "PixelShitZ",
       description: "A brand for selling t-shirts designed for Nerds, Otakus, Devs, Gamers, and Geeks. Managing product design, e-commerce operations, and brand marketing.",
       image: pixelShitzLogo,
+      icon: null,
       tags: ["E-commerce", "Fashion", "Geek Culture"],
       link: null,
       featured: true,
+    },
+    {
+      title: "Map of Clinics — Zango",
+      description: "Academic project: a web platform that maps healthcare clinics across the Zango neighbourhoods in Luanda and collects community needs through a structured assessment form. Led scope, data model, and team coordination.",
+      image: null,
+      icon: MapPin,
+      tags: ["React", "TypeScript", "Tailwind", "Google Maps API", "Civic Tech"],
+      link: null,
+      featured: false,
     },
   ];
 
@@ -63,13 +85,17 @@ const ProjectsSection = () => {
                   </div>
                 )}
 
-                {/* Logo Image */}
+                {/* Logo Image or Icon */}
                 <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden bg-white">
-                  <img 
-                    src={project.image} 
-                    alt={`${project.title} logo`}
-                    className="w-full h-full object-contain p-2"
-                  />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={`${project.title} logo`}
+                      className="w-full h-full object-contain p-2"
+                    />
+                  ) : project.icon ? (
+                    <project.icon className="w-10 h-10 text-primary" />
+                  ) : null}
                 </div>
 
                 {/* Content */}

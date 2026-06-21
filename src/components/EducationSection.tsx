@@ -8,10 +8,10 @@ const EducationSection = () => {
     {
       degree: "High School - Intermediate Course in Computer Science Management",
       institution: "Complexo Escolar Privado de Intercâmbio Cultural Angola e China FENDA DA TUNDAVALA - Faixa e Rota",
-      location: "Angola",
-      period: "Ongoing",
+      location: "Luanda, Angola",
+      period: "Final Year (13ª classe) - Ongoing",
       description:
-        "Developing skills in management, business administration, and organizational leadership with a focus on computer science.",
+        "Final year of the Intermediate Course in Computer Science Management. Combining business administration, organizational leadership, and IT foundations — including system configuration, hardware maintenance, and digital tools for management.",
       current: true,
       logo: fendaTundavalaLogo,
     },
