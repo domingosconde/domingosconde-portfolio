@@ -85,13 +85,17 @@ const ProjectsSection = () => {
                   </div>
                 )}
 
-                {/* Logo Image */}
+                {/* Logo Image or Icon */}
                 <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden bg-white">
-                  <img 
-                    src={project.image} 
-                    alt={`${project.title} logo`}
-                    className="w-full h-full object-contain p-2"
-                  />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={`${project.title} logo`}
+                      className="w-full h-full object-contain p-2"
+                    />
+                  ) : project.icon ? (
+                    <project.icon className="w-10 h-10 text-primary" />
+                  ) : null}
                 </div>
 
                 {/* Content */}
