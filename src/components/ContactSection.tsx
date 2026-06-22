@@ -74,7 +74,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Calumbo Sede, Icolo e Bengo, Angola",
+      value: "Luanda, Angola",
       href: null,
     },
   ];
