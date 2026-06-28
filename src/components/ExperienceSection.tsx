@@ -6,9 +6,19 @@ import andreClassLogo from "@/assets/logos/andreclass.png";
 import construAfricaLogo from "@/assets/logos/construafrica.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
+import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 
 const ExperienceSection = () => {
   const experiences = [
+    {
+      title: "Manager & Partner",
+      company: "LeyV Comercial",
+      location: "Angola",
+      period: "2026 - Present",
+      description: "Managing social media, advertising campaigns, and artistic direction for this online supermarket startup. As a partner, I work alongside the founder on strategic decisions shaping the platform — a digital store offering clothing, footwear, accessories, smartphones, computers, and more, all in one place.",
+      current: true,
+      logo: leyvLogo,
+    },
     {
       title: "Founder & CEO",
       company: "Bee Core System",

@@ -2,6 +2,7 @@ import { ExternalLink, MapPin } from "lucide-react";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
+import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 
 type Project = {
   title: string;
@@ -15,6 +16,15 @@ type Project = {
 
 const ProjectsSection = () => {
   const projects: Project[] = [
+    {
+      title: "LeyV Comercial",
+      description: "Online supermarket startup where I serve as Manager and Partner. A complete digital store offering variety, convenience, and agility — clothing, footwear, accessories, smartphones, computers and more, all in one place. I lead social media, ad campaigns, and artistic direction.",
+      image: leyvLogo,
+      icon: null,
+      tags: ["E-commerce", "Social Media", "Art Direction", "Startup"],
+      link: null,
+      featured: true,
+    },
     {
       title: "Bee Core System",
       description: "Brand dedicated to digital automation support and social media management for businesses and individuals. Tagline: \"Less effort, more systems. Digital solutions to automate and scale your business.\"",
