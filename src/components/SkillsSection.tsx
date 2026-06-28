@@ -70,6 +70,12 @@ const SkillsSection = () => {
       context: "Designing automation workflows and managing social channels for clients through Bee Core System.",
       icon: Globe,
     },
+    {
+      name: "Advertising Campaigns & Art Direction",
+      level: "Intermediate",
+      context: "Leading paid campaigns, visual identity and creative direction for LeyV Comercial's online supermarket.",
+      icon: Lightbulb,
+    },
   ];
 
   const softSkills: SoftSkill[] = [
