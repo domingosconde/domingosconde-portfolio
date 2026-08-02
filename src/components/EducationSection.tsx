@@ -1,4 +1,4 @@
-import { Calendar, MapPin, GraduationCap, Languages, Code2, CheckCircle2, Circle } from "lucide-react";
+import { Calendar, MapPin, GraduationCap, Languages, Code2, CheckCircle2, Circle, Award, ExternalLink } from "lucide-react";
 import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
 import luanda42Logo from "@/assets/logos/42luanda.png";
 import confucioLogo from "@/assets/logos/confucio.png";
