@@ -1,4 +1,4 @@
-import { Calendar, MapPin, GraduationCap, Languages, Code2, CheckCircle2, Circle } from "lucide-react";
+import { Calendar, MapPin, GraduationCap, Languages, Code2, CheckCircle2, Circle, Award, ExternalLink } from "lucide-react";
 import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
 import luanda42Logo from "@/assets/logos/42luanda.png";
 import confucioLogo from "@/assets/logos/confucio.png";
@@ -173,6 +173,59 @@ const EducationSection = () => {
                         </div>
                       )}
                     </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Certifications */}
+          <div className="mt-20 animate-on-scroll">
+            <div className="text-center mb-10">
+              <span className="text-primary font-medium text-sm uppercase tracking-widest">
+                Credentials
+              </span>
+              <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3">
+                Certifications
+              </h3>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-6">
+              {[
+                {
+                  title: "Project Management Foundations: Integration",
+                  issuer: "PMI® Registered Education Provider · LinkedIn Learning",
+                  date: "January 2024",
+                  detail: "Project Integration Management · 0.50 PDUs / Contact Hours · Provider ID #4101",
+                  file: "/certificates/PMI-Project-Integration-Management-Domingos-Conde.pdf",
+                },
+              ].map((cert) => (
+                <div
+                  key={cert.title}
+                  className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elegant"
+                >
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Award className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {cert.title}
+                  </h4>
+                  <p className="text-sm text-muted-foreground mt-1">{cert.issuer}</p>
+                  <p className="text-xs text-muted-foreground mt-3">{cert.detail}</p>
+                  <div className="flex items-center justify-between mt-5">
+                    <span className="text-xs text-muted-foreground flex items-center gap-1.5">
+                      <Calendar className="w-3.5 h-3.5" />
+                      {cert.date}
+                    </span>
+                    <a
+                      href={cert.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:underline"
+                    >
+                      View certificate
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
                   </div>
                 </div>
               ))}
