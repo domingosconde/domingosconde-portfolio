@@ -1,4 +1,4 @@
-import { ArrowDown, Briefcase, Download } from "lucide-react";
+import { ArrowDown, Briefcase } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -27,12 +27,12 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up delay-200 leading-relaxed">
-            Results-driven{" "}
-            <span className="text-primary font-medium">Project Manager</span> with experience in{" "}
+            I am a{" "}
+            <span className="text-primary font-medium">Project Manager</span> experienced in{" "}
             <span className="text-primary font-medium">team leadership</span>,{" "}
             <span className="text-primary font-medium">operations management</span>, and{" "}
             <span className="text-primary font-medium">IT coordination</span>.
-            Turning ideas into structured, impactful projects.
+            I turn ideas into well planned projects that create measurable value.
           </p>
 
           {/* CTA Buttons */}
@@ -42,14 +42,6 @@ const HeroSection = () => {
               className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:glow-primary hover:scale-105"
             >
               Learn More
-            </a>
-            <a
-              href="/cv/Domingos_Conde_CV.pdf"
-              download
-              className="px-8 py-4 border border-primary text-primary rounded-lg font-medium transition-all duration-300 hover:bg-primary hover:text-primary-foreground flex items-center gap-2"
-            >
-              <Download className="w-4 h-4" />
-              Download CV
             </a>
             <a
               href="#contact"

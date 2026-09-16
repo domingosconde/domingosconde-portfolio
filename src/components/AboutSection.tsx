@@ -10,13 +10,13 @@ const AboutSection = () => {
     },
     {
       icon: Rocket,
-      title: "Founder & Entrepreneur",
-      description: "Founded Bee Core System, Open Mind Academy AO, PixelShitZ, NÓDUS English Speak, and partner at LeyV Comercial",
+      title: "Entrepreneurial Leadership",
+      description: "Co-founder of Bee Core System, founder of Open Mind Academy AO, PixelShitZ, and NÓDUS English Speak, and partner at LeyV Comercial",
     },
     {
       icon: Users,
       title: "NGO Leadership",
-      description: "Director of IT, Communication & Finance departments at Fundação ConstruÁfrica",
+      description: "Leadership of the IT, communication, and finance departments at Fundação ConstruÁfrica",
     },
     {
       icon: FileSpreadsheet,
@@ -36,7 +36,7 @@ const AboutSection = () => {
     {
       icon: Code2,
       title: "Tech & Programming Foundations",
-      description: "C programming and web development fundamentals through 42 Luanda Piscines",
+      description: "C programming and web development foundations developed through the 42 Luanda admissions journey",
     },
     {
       icon: Languages,
@@ -79,14 +79,11 @@ const AboutSection = () => {
                 <span className="text-foreground font-medium">
                   Project Manager
                 </span>{" "}
-                with experience leading teams, managing operations, and coordinating IT departments. 
-                Based in{" "}
+                 with hands-on experience leading teams, improving operations, and coordinating technology projects. I am based in{" "}
                 <span className="text-foreground font-medium">Luanda, Angola</span>.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I manage multiple projects simultaneously — from founding an English academy 
-                and a t-shirt brand to directing IT and finance departments at NGOs. 
-                I thrive on turning ideas into structured, impactful outcomes.
+                 My work spans education, e-commerce, digital services, and social impact. I bring structure to ideas, clarify responsibilities, and help teams move from planning to consistent delivery.
               </p>
             </div>
 
