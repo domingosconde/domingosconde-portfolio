@@ -55,7 +55,7 @@ const SkillsSection = () => {
     {
       name: "C Programming Fundamentals",
       level: "Beginner",
-      context: "Completed the 42 Piscine — pointers, memory, recursion and Unix basics.",
+      context: "Practical work during the 42 Luanda Piscine C, including pointers, memory, recursion, and Unix basics.",
       icon: Code2,
     },
     {
@@ -88,7 +88,7 @@ const SkillsSection = () => {
     {
       name: "Conscientiousness & Attention to Detail",
       description:
-        "High accuracy in data entry, reporting and review — a defining trait in day-to-day academy management.",
+        "Maintains accuracy in data entry, reporting, and review during daily academy operations.",
       icon: Eye,
     },
     {
@@ -142,7 +142,7 @@ const SkillsSection = () => {
               Skills & Competencies
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              A qualitative view of my technical toolkit and the behavioural traits I bring to every project.
+               Practical capabilities developed through real projects, professional responsibilities, and continuous learning.
             </p>
           </div>
 
@@ -221,9 +221,9 @@ const SkillsSection = () => {
             </h4>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "Portuguese — Native",
-                "English — C1 Advanced",
-                "Mandarin Chinese — HSK 1 (Beginner)",
+                 "Portuguese (Native)",
+                 "English (C1 Advanced)",
+                 "Mandarin Chinese (HSK 1 Beginner)",
                 "Educational environments",
                 "Digital file organization",
                 "Strong adaptability to new software",

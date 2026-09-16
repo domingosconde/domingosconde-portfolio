@@ -8,7 +8,7 @@ const NonProfitSection = () => {
       name: "Comunidade NÓDUS English Speak",
       role: "Founder",
       description:
-        "A community-driven NGO helping young people speak English with greater confidence. Through community-based learning, practice sessions, and peer support, we create a safe space for language growth.",
+        "A community organisation that helps young people speak English with greater confidence. We create a supportive environment through guided practice, shared learning, and peer support.",
       logo: nodusLogo,
       current: true,
     },
@@ -16,7 +16,7 @@ const NonProfitSection = () => {
       name: "Fundação ConstruÁfrica",
       role: "Director of IT & Communication / Finance",
       description:
-        "An NGO focused on social development in Africa. I direct both the IT & Communication department and the Finance department, managing digital infrastructure, communications strategy, and financial operations.",
+        "An organisation focused on social development in Africa. I direct the IT and Communication department and the Finance department, managing digital infrastructure, communication planning, and financial operations.",
       logo: construAfricaLogo,
       current: true,
     },
@@ -35,7 +35,7 @@ const NonProfitSection = () => {
               Non-Profit Organizations
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Organizations where I contribute my skills to create positive social impact
+               Organisations where I apply leadership and operational skills to support lasting social impact.
             </p>
           </div>
 

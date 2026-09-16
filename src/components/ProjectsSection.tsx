@@ -18,7 +18,7 @@ const ProjectsSection = () => {
   const projects: Project[] = [
     {
       title: "LeyV Comercial",
-      description: "Online supermarket startup where I serve as Manager and Partner. A complete digital store offering variety, convenience, and agility — clothing, footwear, accessories, smartphones, computers and more, all in one place. I lead social media, ad campaigns, and artistic direction.",
+      description: "An online supermarket startup where I serve as Manager and Partner. The store brings clothing, footwear, accessories, smartphones, computers, and other products together in one convenient place. I lead social media, advertising campaigns, and artistic direction.",
       image: leyvLogo,
       icon: null,
       tags: ["E-commerce", "Social Media", "Art Direction", "Startup"],
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Bee Core System",
-      description: "Brand dedicated to digital automation support and social media management for businesses and individuals. Tagline: \"Less effort, more systems. Digital solutions to automate and scale your business.\"",
+      description: "A digital services brand I co-founded to help businesses and individuals automate routine work, manage social media, and build systems that support sustainable growth.",
       image: beeCoreLogo,
       icon: null,
       tags: ["Automation", "Social Media", "Digital Strategy"],
@@ -36,7 +36,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Open Mind Academy AO",
-      description: "Hybrid English academy that I founded and manage. Managing daily administrative operations including student records, scheduling, documentation, and internal coordination.",
+      description: "A hybrid English academy that I founded and manage. I oversee student records, scheduling, documentation, internal coordination, and the daily learning experience.",
       image: openMindLogo,
       icon: null,
       tags: ["Education", "Administration", "Management"],
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
     },
     {
       title: "PixelShitZ",
-      description: "A brand for selling t-shirts designed for Nerds, Otakus, Devs, Gamers, and Geeks. Managing product design, e-commerce operations, and brand marketing.",
+      description: "A t-shirt brand created for nerds, anime fans, developers, gamers, and geeks. I manage product design, e-commerce operations, inventory, and brand marketing.",
       image: pixelShitzLogo,
       icon: null,
       tags: ["E-commerce", "Fashion", "Geek Culture"],
@@ -53,8 +53,8 @@ const ProjectsSection = () => {
       featured: true,
     },
     {
-      title: "Map of Clinics — Zango",
-      description: "Academic project: a web platform that maps healthcare clinics across the Zango neighbourhoods in Luanda and collects community needs through a structured assessment form. Led scope, data model, and team coordination.",
+      title: "Map of Clinics in Zango",
+      description: "An academic web project that maps healthcare clinics across the Zango neighbourhoods in Luanda and gathers community needs through a structured assessment form. I led the scope, data model, and team coordination.",
       image: null,
       icon: MapPin,
       tags: ["React", "TypeScript", "Tailwind", "Google Maps API", "Civic Tech"],
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
               Featured Work
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Initiatives and projects I have developed throughout my career
+               Selected initiatives where I have combined planning, leadership, technology, and practical delivery.
             </p>
           </div>
 
