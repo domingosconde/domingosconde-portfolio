@@ -1,5 +1,3 @@
-import { Heart } from "lucide-react";
-
 const Footer = () => {
   return (
     <footer className="py-8 bg-background border-t border-border">
@@ -8,8 +6,8 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} Domingos Conde. All rights reserved.
           </p>
-          <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary" /> in Angola
+          <p className="text-muted-foreground text-sm">
+            Project Manager based in Luanda, Angola
           </p>
         </div>
       </div>

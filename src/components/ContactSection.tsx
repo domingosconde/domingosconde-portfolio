@@ -43,8 +43,8 @@ const ContactSection = () => {
       if (error) throw error;
 
       toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        title: "Message sent",
+        description: "Thank you for getting in touch. I will respond as soon as possible.",
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
@@ -101,7 +101,7 @@ const ContactSection = () => {
               Let's Connect
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Have a question or want to work together? Feel free to reach out!
+               Have a project, opportunity, or idea to discuss? Send me a message.
             </p>
           </div>
 

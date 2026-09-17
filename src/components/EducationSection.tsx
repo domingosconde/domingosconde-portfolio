@@ -1,44 +1,18 @@
-import { Calendar, MapPin, GraduationCap, Languages, Code2, CheckCircle2, Circle, Award, ExternalLink } from "lucide-react";
+import { Calendar, ExternalLink, MapPin } from "lucide-react";
 import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
-import luanda42Logo from "@/assets/logos/42luanda.png";
-import confucioLogo from "@/assets/logos/confucio.png";
+import pmiAsset from "@/assets/courses/pmi.jpg.asset.json";
 
 const EducationSection = () => {
   const education = [
     {
-      degree: "High School - Intermediate Course in Computer Science Management",
+      degree: "High School Diploma in Computer Science Management",
       institution: "Complexo Escolar Privado de Intercâmbio Cultural Angola e China FENDA DA TUNDAVALA - Faixa e Rota",
       location: "Luanda, Angola",
-      period: "Final Year (13ª classe) - Ongoing",
+      period: "Final Year, 13th Grade",
       description:
-        "Final year of the Intermediate Course in Computer Science Management. Combining business administration, organizational leadership, and IT foundations — including system configuration, hardware maintenance, and digital tools for management.",
+        "Completing the final year of a programme that combines business administration, organisational management, and information technology. The curriculum includes system configuration, hardware maintenance, and digital tools for management.",
       current: true,
       logo: fendaTundavalaLogo,
-    },
-    {
-      degree: "Admissions Journey - Software Engineering",
-      institution: "42 Luanda",
-      location: "Luanda, Angola",
-      period: "Ongoing",
-      description:
-        "Currently competing for a student spot at 42 Luanda through their selective admissions process. Progressing through intensive peer-to-peer challenges focused on problem solving, algorithms, and software engineering fundamentals.",
-      current: true,
-      logo: luanda42Logo,
-      timeline: [
-        { label: "Discovery Piscine Web", status: "completed" as const },
-        { label: "Piscine C", status: "current" as const },
-        { label: "Student Selection", status: "upcoming" as const },
-      ],
-    },
-    {
-      degree: "Mandarin Chinese - HSK 1",
-      institution: "Instituto Confúcio na Universidade Agostinho Neto",
-      location: "Luanda, Angola",
-      period: "Ongoing",
-      description:
-        "Studying Mandarin Chinese at HSK 1 level, building foundational skills in speaking, reading, writing, and cultural understanding.",
-      current: true,
-      logo: confucioLogo,
     },
   ];
 
@@ -128,50 +102,6 @@ const EducationSection = () => {
                         {item.description}
                       </p>
 
-                      {/* Micro Timeline (e.g., 42 admissions journey) */}
-                      {"timeline" in item && item.timeline && (
-                        <div className="mt-5 pt-5 border-t border-border">
-                          <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">
-                            Journey
-                          </p>
-                          <div className="flex items-center gap-2">
-                            {item.timeline.map((step, i) => (
-                              <div key={step.label} className="flex items-center gap-2 flex-1">
-                                <div className="flex flex-col items-center gap-1.5 flex-1">
-                                  {step.status === "completed" ? (
-                                    <CheckCircle2 className="w-5 h-5 text-primary" />
-                                  ) : step.status === "current" ? (
-                                    <div className="relative">
-                                      <Circle className="w-5 h-5 text-primary fill-primary/20" />
-                                      <div className="absolute inset-0 rounded-full bg-primary animate-ping opacity-40" />
-                                    </div>
-                                  ) : (
-                                    <Circle className="w-5 h-5 text-muted-foreground/40" />
-                                  )}
-                                  <span
-                                    className={`text-[10px] text-center leading-tight ${
-                                      step.status === "upcoming"
-                                        ? "text-muted-foreground/60"
-                                        : "text-foreground font-medium"
-                                    }`}
-                                  >
-                                    {step.label}
-                                  </span>
-                                </div>
-                                {i < item.timeline.length - 1 && (
-                                  <div
-                                    className={`h-px flex-1 -mt-4 ${
-                                      step.status === "completed"
-                                        ? "bg-primary"
-                                        : "bg-border"
-                                    }`}
-                                  />
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -194,18 +124,24 @@ const EducationSection = () => {
               {[
                 {
                   title: "Project Management Foundations: Integration",
-                  issuer: "PMI® Registered Education Provider · LinkedIn Learning",
+                   issuer: "PMI Registered Education Provider, LinkedIn Learning",
                   date: "January 2024",
-                  detail: "Project Integration Management · 0.50 PDUs / Contact Hours · Provider ID #4101",
+                   detail: "Project Integration Management. 0.50 PDUs or contact hours. Provider ID 4101.",
                   file: "/certificates/PMI-Project-Integration-Management-Domingos-Conde.pdf",
+                   logo: pmiAsset.url,
                 },
               ].map((cert) => (
                 <div
                   key={cert.title}
                   className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elegant"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Award className="w-6 h-6 text-primary" />
+                   <div className="w-14 h-14 rounded-lg bg-primary-foreground border border-border flex items-center justify-center mb-4 overflow-hidden">
+                     <img
+                       src={cert.logo}
+                       alt="Project Management Institute logo"
+                       className="w-full h-full object-contain p-1.5"
+                       loading="lazy"
+                     />
                   </div>
                   <h4 className="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                     {cert.title}
