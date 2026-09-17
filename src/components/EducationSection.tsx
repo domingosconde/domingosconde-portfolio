@@ -1,4 +1,4 @@
-import { Award, Calendar, ExternalLink, MapPin } from "lucide-react";
+import { Calendar, ExternalLink, MapPin } from "lucide-react";
 import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
 import pmiAsset from "@/assets/courses/pmi.jpg.asset.json";
 
