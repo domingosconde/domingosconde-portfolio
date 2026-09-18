@@ -2,7 +2,7 @@ import { Calendar, CheckCircle2, Circle, MapPin } from "lucide-react";
 import luanda42Logo from "@/assets/logos/42luanda.png";
 import confucioLogo from "@/assets/logos/confucio.png";
 import harvardAsset from "@/assets/courses/harvard-university.jpg.asset.json";
-import stanfordAsset from "@/assets/courses/stanford-university.jpg.asset.json";
+import stanfordLogo from "@/assets/courses/stanford-university.jpg";
 import mitAsset from "@/assets/courses/mit.jpg.asset.json";
 import googleAsset from "@/assets/courses/google.jpg.asset.json";
 import googleAdsAsset from "@/assets/courses/google-ads.jpg.asset.json";
@@ -60,7 +60,7 @@ const courses: Course[] = [
     status: "Ongoing",
     description:
       "Exploring professional paths, production environments, and the technical skills used across modern media industries.",
-    logos: [stanfordAsset.url],
+    logos: [stanfordLogo],
   },
   {
     title: "Module 0: Introduction to Universal AI",
@@ -125,7 +125,7 @@ const ProfessionalCoursesSection = () => {
                         <img
                           src={logo}
                           alt={`${course.institution} logo`}
-                          className="w-full h-full object-contain p-1.5"
+                          className={`w-full h-full object-contain ${course.title === "Careers in Media Technology" ? "p-0.5 scale-125" : "p-1.5"}`}
                           loading="lazy"
                         />
                       </div>

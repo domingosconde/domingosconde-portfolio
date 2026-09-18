@@ -11,7 +11,7 @@ const AboutSection = () => {
     {
       icon: Rocket,
       title: "Entrepreneurial Leadership",
-      description: "Co-founder of Bee Core System, founder of Open Mind Academy AO, PixelShitZ, and NÓDUS English Speak, and partner at LeyV Comercial",
+      description: "Co-founder of Bee Core System and NÓDUS English Speak, founder of Open Mind Academy AO and PixelShitZ, creator of Shengtian AO, and partner at LeyV Comercial",
     },
     {
       icon: Users,
