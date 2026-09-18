@@ -125,7 +125,7 @@ const ProfessionalCoursesSection = () => {
                         <img
                           src={logo}
                           alt={`${course.institution} logo`}
-                          className="w-full h-full object-contain p-1.5"
+                          className={`w-full h-full object-contain ${course.title === "Careers in Media Technology" ? "p-0.5 scale-125" : "p-1.5"}`}
                           loading="lazy"
                         />
                       </div>

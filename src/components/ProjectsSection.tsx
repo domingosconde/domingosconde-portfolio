@@ -3,6 +3,8 @@ import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
+import nodusLogo from "@/assets/logos/nodus.png";
+import shengtianAsset from "@/assets/logos/shengtian-ao.jpg.asset.json";
 
 type Project = {
   title: string;
@@ -16,6 +18,15 @@ type Project = {
 
 const ProjectsSection = () => {
   const projects: Project[] = [
+    {
+      title: "Shengtian AO",
+      description: "An AI assistant I created to give small farmers practical access to agricultural guidance. It answers questions through WhatsApp and SMS, helping people in areas with limited internet coverage when an agronomist is not readily available.",
+      image: shengtianAsset.url,
+      icon: null,
+      tags: ["Artificial Intelligence", "Agriculture", "WhatsApp", "SMS", "Social Impact"],
+      link: null,
+      featured: true,
+    },
     {
       title: "LeyV Comercial",
       description: "An online supermarket startup where I serve as Manager and Partner. The store brings clothing, footwear, accessories, smartphones, computers, and other products together in one convenient place. I lead social media, advertising campaigns, and artistic direction.",
@@ -53,8 +64,17 @@ const ProjectsSection = () => {
       featured: true,
     },
     {
-      title: "Map of Clinics in Zango",
-      description: "An academic web project that maps healthcare clinics across the Zango neighbourhoods in Luanda and gathers community needs through a structured assessment form. I led the scope, data model, and team coordination.",
+      title: "Comunidade NÓDUS English Speak",
+      description: "A community initiative I co-founded to help young people speak English with confidence through guided practice, shared learning, and peer support. I serve as Co-Founder and Managing Director.",
+      image: nodusLogo,
+      icon: null,
+      tags: ["Education", "Community", "Leadership", "English"],
+      link: null,
+      featured: true,
+    },
+    {
+      title: "ClinEncontra",
+      description: "My high school web project for mapping healthcare clinics across the Zango neighbourhoods in Luanda and gathering community needs through a structured assessment form. I led the scope, data model, and team coordination.",
       image: null,
       icon: MapPin,
       tags: ["React", "TypeScript", "Tailwind", "Google Maps API", "Civic Tech"],

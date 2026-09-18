@@ -47,11 +47,11 @@ const ExperienceSection = () => {
       logo: construAfricaLogo,
     },
     {
-      title: "Founder",
+      title: "Co-Founder & Managing Director",
       company: "Comunidade NÓDUS English Speak",
       location: "Angola",
       period: "2025 - Present",
-      description: "I founded a community organisation that helps young people speak English with confidence through guided practice, shared learning, and peer support.",
+      description: "I co-founded and manage a community initiative that helps young people speak English with confidence through guided practice, shared learning, and peer support.",
       current: true,
       logo: nodusLogo,
     },

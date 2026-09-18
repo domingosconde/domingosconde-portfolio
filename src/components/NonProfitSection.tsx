@@ -6,9 +6,9 @@ const NonProfitSection = () => {
   const organizations = [
     {
       name: "Comunidade NÓDUS English Speak",
-      role: "Founder",
+      role: "Co-Founder & Managing Director",
       description:
-        "A community organisation that helps young people speak English with greater confidence. We create a supportive environment through guided practice, shared learning, and peer support.",
+        "A community initiative I co-founded to help young people speak English with greater confidence. We create a supportive environment through guided practice, shared learning, and peer support.",
       logo: nodusLogo,
       current: true,
     },
