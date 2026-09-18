@@ -4,7 +4,7 @@ import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
-import shengtianAsset from "@/assets/logos/shengtian-ao.jpg.asset.json";
+import shengtianLogo from "@/assets/logos/shengtian-ao.jpg";
 
 type Project = {
   title: string;
@@ -21,7 +21,7 @@ const ProjectsSection = () => {
     {
       title: "Shengtian AO",
       description: "An AI assistant I created to give small farmers practical access to agricultural guidance. It answers questions through WhatsApp and SMS, helping people in areas with limited internet coverage when an agronomist is not readily available.",
-      image: shengtianAsset.url,
+      image: shengtianLogo,
       icon: null,
       tags: ["Artificial Intelligence", "Agriculture", "WhatsApp", "SMS", "Social Impact"],
       link: null,

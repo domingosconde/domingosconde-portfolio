@@ -13,4 +13,4 @@
 - [x] Add NÓDUS to Featured Work and align its leadership title
 - [x] Rename the high school project to ClinEncontra
 - [x] Improve Stanford University logo visibility
-- [ ] Verify the updated cards on mobile and desktop
+- [x] Verify the updated cards on mobile and desktop
