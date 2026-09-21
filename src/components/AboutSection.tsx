@@ -41,7 +41,7 @@ const AboutSection = () => {
     {
       icon: Languages,
       title: "Multilingual Professional",
-      description: "Native Portuguese, Advanced English (C1), and learning Mandarin (HSK 1)",
+      description: "Native Portuguese, Upper Intermediate English (B2), and learning Mandarin (HSK 1)",
     },
   ];
 
