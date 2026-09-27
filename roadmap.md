@@ -14,3 +14,9 @@
 - [x] Rename the high school project to ClinEncontra
 - [x] Improve Stanford University logo visibility
 - [x] Verify the updated cards on mobile and desktop
+
+# Brand and date corrections
+
+- [x] Correct PixelShirtZ across portfolio copy, SEO, and translation guidance
+- [x] Confirm Bee Core System date in experience and add it to featured work
+- [ ] Verify site-wide text and rendered cards

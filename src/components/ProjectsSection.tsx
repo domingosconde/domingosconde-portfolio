@@ -1,6 +1,6 @@
 import { ExternalLink, MapPin } from "lucide-react";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
-import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
+import pixelShirtzLogo from "@/assets/logos/pixelshirtz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Bee Core System",
-      description: "A digital services brand I co-founded to help businesses and individuals automate routine work, manage social media, and build systems that support sustainable growth.",
+      description: "A digital services brand I co-founded in May 2026 to help businesses and individuals automate routine work, manage social media, and build systems that support sustainable growth.",
       image: beeCoreLogo,
       icon: null,
       tags: ["Automation", "Social Media", "Digital Strategy"],
@@ -55,9 +55,9 @@ const ProjectsSection = () => {
       featured: true,
     },
     {
-      title: "PixelShitZ",
+      title: "PixelShirtZ",
       description: "A t-shirt brand created for nerds, anime fans, developers, gamers, and geeks. I manage product design, e-commerce operations, inventory, and brand marketing.",
-      image: pixelShitzLogo,
+      image: pixelShirtzLogo,
       icon: null,
       tags: ["E-commerce", "Fashion", "Geek Culture"],
       link: null,

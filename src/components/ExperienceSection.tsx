@@ -1,5 +1,5 @@
 import { Calendar, MapPin } from "lucide-react";
-import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
+import pixelShirtzLogo from "@/assets/logos/pixelshirtz.png";
 import roseEnglishLogo from "@/assets/logos/roseenglish.jpg";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import andreClassLogo from "@/assets/logos/andreclass.png";
@@ -30,12 +30,12 @@ const ExperienceSection = () => {
     },
     {
       title: "Founder & Manager",
-      company: "PixelShitZ",
+      company: "PixelShirtZ",
       location: "Luanda, Angola",
       period: "September 2025 - Present",
       description: "I founded and manage a t-shirt brand for nerds, anime fans, developers, gamers, and geeks. I oversee product design, e-commerce operations, inventory, and brand marketing.",
       current: true,
-      logo: pixelShitzLogo,
+      logo: pixelShirtzLogo,
     },
     {
       title: "Director of IT & Communication / Finance",
