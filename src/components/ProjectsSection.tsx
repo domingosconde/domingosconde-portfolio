@@ -1,6 +1,6 @@
 import { ExternalLink, MapPin } from "lucide-react";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
-import pixelShitzLogo from "@/assets/logos/pixelshitz.png";
+import pixelShirtzLogo from "@/assets/logos/pixelshirtz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
@@ -12,6 +12,7 @@ type Project = {
   image: string | null;
   icon: React.ElementType | null;
   tags: string[];
+  period?: string;
   link: string | null;
   featured: boolean;
 };
@@ -42,6 +43,7 @@ const ProjectsSection = () => {
       image: beeCoreLogo,
       icon: null,
       tags: ["Automation", "Social Media", "Digital Strategy"],
+      period: "May 2026 - Present",
       link: null,
       featured: true,
     },
@@ -55,9 +57,9 @@ const ProjectsSection = () => {
       featured: true,
     },
     {
-      title: "PixelShitZ",
+      title: "PixelShirtZ",
       description: "A t-shirt brand created for nerds, anime fans, developers, gamers, and geeks. I manage product design, e-commerce operations, inventory, and brand marketing.",
-      image: pixelShitzLogo,
+      image: pixelShirtzLogo,
       icon: null,
       tags: ["E-commerce", "Fashion", "Geek Culture"],
       link: null,
@@ -132,6 +134,9 @@ const ProjectsSection = () => {
                 <h3 className="font-display text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
+                {project.period && (
+                  <p className="text-primary text-sm font-medium mb-3">{project.period}</p>
+                )}
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                   {project.description}
                 </p>
