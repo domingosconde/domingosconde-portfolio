@@ -12,6 +12,7 @@ type Project = {
   image: string | null;
   icon: React.ElementType | null;
   tags: string[];
+  period?: string;
   link: string | null;
   featured: boolean;
 };
@@ -38,10 +39,11 @@ const ProjectsSection = () => {
     },
     {
       title: "Bee Core System",
-      description: "A digital services brand I co-founded in May 2026 to help businesses and individuals automate routine work, manage social media, and build systems that support sustainable growth.",
+      description: "A digital services brand I co-founded to help businesses and individuals automate routine work, manage social media, and build systems that support sustainable growth.",
       image: beeCoreLogo,
       icon: null,
       tags: ["Automation", "Social Media", "Digital Strategy"],
+      period: "May 2026 - Present",
       link: null,
       featured: true,
     },
@@ -132,6 +134,9 @@ const ProjectsSection = () => {
                 <h3 className="font-display text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
+                {project.period && (
+                  <p className="text-primary text-sm font-medium mb-3">{project.period}</p>
+                )}
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                   {project.description}
                 </p>
