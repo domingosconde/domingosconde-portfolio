@@ -19,4 +19,4 @@
 
 - [x] Correct PixelShirtZ across portfolio copy, SEO, and translation guidance
 - [x] Confirm Bee Core System date in experience and add it to featured work
-- [ ] Verify site-wide text and rendered cards
+- [x] Verify site-wide text and rendered cards
