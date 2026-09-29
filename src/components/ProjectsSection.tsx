@@ -36,7 +36,7 @@ const ProjectsSection = () => {
       tags: ["E-commerce", "Social Media", "Art Direction", "Startup"],
       period: "2026",
       link: null,
-      featured: true,
+      featured: false,
     },
     {
       title: "Bee Core System",
