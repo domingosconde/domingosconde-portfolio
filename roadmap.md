@@ -20,3 +20,10 @@
 - [x] Correct PixelShirtZ across portfolio copy, SEO, and translation guidance
 - [x] Confirm Bee Core System date in experience and add it to featured work
 - [x] Verify site-wide text and rendered cards
+
+# September 2026 role updates
+
+- [x] Mark LeyV Comercial as past experience across experience, featured work, and summary
+- [x] Mark Fundação ConstruÁfrica as past experience across experience and social impact
+- [x] Add Galp Energia via ASIS as a current role with dates and sales tags
+- [x] Verify all mentions and rendered role states

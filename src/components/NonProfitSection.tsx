@@ -15,10 +15,11 @@ const NonProfitSection = () => {
     {
       name: "Fundação ConstruÁfrica",
       role: "Director of IT & Communication / Finance",
+      period: "2025 - September 2026",
       description:
-        "An organisation focused on social development in Africa. I direct the IT and Communication department and the Finance department, managing digital infrastructure, communication planning, and financial operations.",
+        "An organisation focused on social development in Africa. I directed the IT and Communication department and the Finance department, managing digital infrastructure, communication planning, and financial operations.",
       logo: construAfricaLogo,
-      current: true,
+      current: false,
     },
   ];
 
@@ -73,6 +74,9 @@ const NonProfitSection = () => {
                 <h3 className="font-display text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {org.name}
                 </h3>
+                {org.period && (
+                  <p className="text-primary text-sm font-medium mb-3">{org.period}</p>
+                )}
 
                 {/* Description */}
                 <p className="text-muted-foreground text-sm leading-relaxed">

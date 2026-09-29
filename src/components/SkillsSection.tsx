@@ -73,12 +73,18 @@ const SkillsSection = () => {
     {
       name: "Advertising Campaigns & Art Direction",
       level: "Intermediate",
-      context: "Leading paid campaigns, visual identity and creative direction for LeyV Comercial's online supermarket.",
+      context: "Led paid campaigns, visual identity and creative direction for LeyV Comercial's online supermarket in 2026.",
       icon: Lightbulb,
     },
   ];
 
   const softSkills: SoftSkill[] = [
+    {
+      name: "Sales & Customer Communication",
+      description:
+        "Preparing for remote outbound customer outreach and energy contract sales for Galp Energia through ASIS (Asisera Lda); onboarding began in September 2026.",
+      icon: MessageSquare,
+    },
     {
       name: "Administrative Organization",
       description:
