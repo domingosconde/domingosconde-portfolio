@@ -11,12 +11,12 @@ const AboutSection = () => {
     {
       icon: Rocket,
       title: "Entrepreneurial Leadership",
-      description: "Co-founder of Bee Core System and NÓDUS English Speak, founder of Open Mind Academy AO and PixelShirtZ, creator of Shengtian AO, and partner at LeyV Comercial",
+      description: "Co-founder of Bee Core System and NÓDUS English Speak, founder of Open Mind Academy AO and PixelShirtZ, creator of Shengtian AO, and former partner at LeyV Comercial",
     },
     {
       icon: Users,
       title: "NGO Leadership",
-      description: "Leadership of the IT, communication, and finance departments at Fundação ConstruÁfrica",
+      description: "Former director of IT, communication, and finance at Fundação ConstruÁfrica through September 2026",
     },
     {
       icon: FileSpreadsheet,

@@ -11,12 +11,23 @@ import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Agente Comercial Galp Energia (Call Center Seller / Outbound)",
+      company: "Galp Energia via ASIS (Asisera Lda)",
+      location: "Remote",
+      period: "September 2026 - Present",
+      description: "Remote outbound sales agent for Galp Energia, handling customer outreach, argumentation, and closing energy contracts on behalf of Galp through an authorized commercial partnership.",
+      note: "Onboarding began in September 2026; outbound sales begin October 1, 2026.",
+      tags: ["Sales", "Outbound", "Customer Communication", "Energy Sector"],
+      current: true,
+      logo: null,
+    },
+    {
       title: "Manager & Partner",
       company: "LeyV Comercial",
       location: "Angola",
-      period: "2026 - Present",
-      description: "I manage social media, advertising campaigns, and artistic direction for this online supermarket startup. As a partner, I work with the founder on strategic decisions that shape a digital store offering clothing, footwear, accessories, smartphones, computers, and more in one place.",
-      current: true,
+      period: "2026",
+      description: "I managed social media, advertising campaigns, and artistic direction for this online supermarket startup. As a partner, I worked with the founder on strategic decisions that shaped a digital store offering clothing, footwear, accessories, smartphones, computers, and more in one place.",
+      current: false,
       logo: leyvLogo,
     },
     {
@@ -41,9 +52,9 @@ const ExperienceSection = () => {
       title: "Director of IT & Communication / Finance",
       company: "Fundação ConstruÁfrica",
       location: "Angola",
-      period: "2025 - Present",
-      description: "I direct the IT and Communication department and the Finance department at this NGO. My responsibilities include digital infrastructure, internal communications, financial reporting, and organisational planning.",
-      current: true,
+      period: "2025 - September 2026",
+      description: "I directed the IT and Communication department and the Finance department at this NGO. My responsibilities included digital infrastructure, internal communications, financial reporting, and organisational planning.",
+      current: false,
       logo: construAfricaLogo,
     },
     {
@@ -186,6 +197,16 @@ const ExperienceSection = () => {
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         {item.description}
                       </p>
+                      {item.note && (
+                        <p className="text-muted-foreground text-sm leading-relaxed mt-3">{item.note}</p>
+                      )}
+                      {item.tags && (
+                        <div className="flex flex-wrap gap-2 mt-4">
+                          {item.tags.map((tag) => (
+                            <span key={tag} className="px-3 py-1 bg-muted text-muted-foreground text-xs rounded-full">{tag}</span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

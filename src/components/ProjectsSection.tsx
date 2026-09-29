@@ -30,10 +30,11 @@ const ProjectsSection = () => {
     },
     {
       title: "LeyV Comercial",
-      description: "An online supermarket startup where I serve as Manager and Partner. The store brings clothing, footwear, accessories, smartphones, computers, and other products together in one convenient place. I lead social media, advertising campaigns, and artistic direction.",
+      description: "An online supermarket startup where I served as Manager and Partner in 2026. The store brings clothing, footwear, accessories, smartphones, computers, and other products together in one convenient place. I led social media, advertising campaigns, and artistic direction.",
       image: leyvLogo,
       icon: null,
       tags: ["E-commerce", "Social Media", "Art Direction", "Startup"],
+      period: "2026",
       link: null,
       featured: true,
     },
