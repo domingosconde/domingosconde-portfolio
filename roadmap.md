@@ -26,4 +26,4 @@
 - [x] Mark LeyV Comercial as past experience across experience, featured work, and summary
 - [x] Mark Fundação ConstruÁfrica as past experience across experience and social impact
 - [x] Add Galp Energia via ASIS as a current role with dates and sales tags
-- [ ] Verify all mentions and rendered role states
+- [x] Verify all mentions and rendered role states
