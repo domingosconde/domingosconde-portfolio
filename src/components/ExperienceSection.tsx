@@ -10,8 +10,21 @@ import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 import galpLogo from "@/assets/logos/galp.png.asset.json";
 import asisLogo from "@/assets/logos/asis.png.asset.json";
 
+type Experience = {
+  title: string;
+  company: string;
+  location: string;
+  period: string;
+  description: string;
+  note?: string;
+  tags?: string[];
+  current: boolean;
+  logo: string | null;
+  logo2?: string | null;
+};
+
 const ExperienceSection = () => {
-  const experiences = [
+  const experiences: Experience[] = [
     {
       title: "Agente Comercial Galp Energia (Call Center Seller / Outbound)",
       company: "Galp Energia via ASIS (Asisera Lda)",
