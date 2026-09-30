@@ -7,11 +7,9 @@ import construAfricaLogo from "@/assets/logos/construafrica.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
-import galpLogo from "@/assets/logos/galp.png.asset.json";
-import asisLogo from "@/assets/logos/asis.png.asset.json";
+import galpLogo from "@/assets/logos/galp.png";
+import asisLogo from "@/assets/logos/asis.png";
 
-const galpLogoUrl = galpLogo.url;
-const asisLogoUrl = asisLogo.url;
 
 type Experience = {
   title: string;
@@ -37,8 +35,8 @@ const ExperienceSection = () => {
       note: "Onboarding began in September 2026; outbound sales begin October 1, 2026.",
       tags: ["Sales", "Outbound", "Customer Communication", "Energy Sector"],
       current: true,
-      logo: galpLogoUrl,
-      logo2: asisLogoUrl,
+      logo: galpLogo,
+      logo2: asisLogo,
     },
     {
       title: "Manager & Partner",
