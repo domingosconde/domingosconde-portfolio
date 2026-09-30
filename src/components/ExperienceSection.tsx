@@ -7,9 +7,25 @@ import construAfricaLogo from "@/assets/logos/construafrica.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
+import galpLogo from "@/assets/logos/galp.png";
+import asisLogo from "@/assets/logos/asis.png";
+
+
+type Experience = {
+  title: string;
+  company: string;
+  location: string;
+  period: string;
+  description: string;
+  note?: string;
+  tags?: string[];
+  current: boolean;
+  logo: string | null;
+  logo2?: string | null;
+};
 
 const ExperienceSection = () => {
-  const experiences = [
+  const experiences: Experience[] = [
     {
       title: "Agente Comercial Galp Energia (Call Center Seller / Outbound)",
       company: "Galp Energia via ASIS (Asisera Lda)",
@@ -19,7 +35,8 @@ const ExperienceSection = () => {
       note: "Onboarding began in September 2026; outbound sales begin October 1, 2026.",
       tags: ["Sales", "Outbound", "Customer Communication", "Energy Sector"],
       current: true,
-      logo: null,
+      logo: galpLogo,
+      logo2: asisLogo,
     },
     {
       title: "Manager & Partner",
@@ -154,14 +171,25 @@ const ExperienceSection = () => {
                         </span>
                       )}
 
-                      {/* Company Logo */}
+                      {/* Company Logo(s) */}
                       {item.logo ? (
-                        <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 overflow-hidden bg-white border border-border">
-                          <img 
-                            src={item.logo} 
-                            alt={`${item.company} logo`}
-                            className="w-full h-full object-contain p-1"
-                          />
+                        <div className="flex items-center gap-2 mb-4">
+                          <div className="w-14 h-14 rounded-lg flex items-center justify-center overflow-hidden bg-white border border-border">
+                            <img 
+                              src={item.logo} 
+                              alt={`${item.company} logo`}
+                              className="w-full h-full object-contain p-1"
+                            />
+                          </div>
+                          {item.logo2 && (
+                            <div className="w-14 h-14 rounded-lg flex items-center justify-center overflow-hidden bg-white border border-border">
+                              <img 
+                                src={item.logo2} 
+                                alt={`${item.company} partner logo`}
+                                className="w-full h-full object-contain p-1"
+                              />
+                            </div>
+                          )}
                         </div>
                       ) : (
                         <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 bg-primary/10 border border-border">
