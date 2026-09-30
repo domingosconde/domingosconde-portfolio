@@ -34,7 +34,8 @@ const ExperienceSection = () => {
       note: "Onboarding began in September 2026; outbound sales begin October 1, 2026.",
       tags: ["Sales", "Outbound", "Customer Communication", "Energy Sector"],
       current: true,
-      logo: null,
+      logo: galpLogo,
+      logo2: asisLogo,
     },
     {
       title: "Manager & Partner",
