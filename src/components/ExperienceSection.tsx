@@ -170,14 +170,25 @@ const ExperienceSection = () => {
                         </span>
                       )}
 
-                      {/* Company Logo */}
+                      {/* Company Logo(s) */}
                       {item.logo ? (
-                        <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 overflow-hidden bg-white border border-border">
-                          <img 
-                            src={item.logo} 
-                            alt={`${item.company} logo`}
-                            className="w-full h-full object-contain p-1"
-                          />
+                        <div className="flex items-center gap-2 mb-4">
+                          <div className="w-14 h-14 rounded-lg flex items-center justify-center overflow-hidden bg-white border border-border">
+                            <img 
+                              src={item.logo} 
+                              alt={`${item.company} logo`}
+                              className="w-full h-full object-contain p-1"
+                            />
+                          </div>
+                          {item.logo2 && (
+                            <div className="w-14 h-14 rounded-lg flex items-center justify-center overflow-hidden bg-white border border-border">
+                              <img 
+                                src={item.logo2} 
+                                alt={`${item.company} partner logo`}
+                                className="w-full h-full object-contain p-1"
+                              />
+                            </div>
+                          )}
                         </div>
                       ) : (
                         <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4 bg-primary/10 border border-border">
