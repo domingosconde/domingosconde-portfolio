@@ -7,8 +7,8 @@ import construAfricaLogo from "@/assets/logos/construafrica.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
-import galpLogo from "@/assets/logos/galp.png.asset.json";
-import asisLogo from "@/assets/logos/asis.png.asset.json";
+const galpLogoUrl = galpLogo.url;
+const asisLogoUrl = asisLogo.url;
 
 type Experience = {
   title: string;
