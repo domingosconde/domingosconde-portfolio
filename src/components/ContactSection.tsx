@@ -42,6 +42,8 @@ const ContactSection = () => {
 
       if (error) throw error;
 
+      await supabase.functions.invoke("contact-notify", { body: parsed.data });
+
       toast({
         title: "Message sent",
         description: "Thank you for getting in touch. I will respond as soon as possible.",
