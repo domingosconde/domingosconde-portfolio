@@ -36,13 +36,14 @@ const ContactSection = () => {
 
     setSubmitting(true);
     try {
-      const { error } = await supabase
-        .from("contact_submissions")
-        .insert(parsed.data as ContactInput);
+      const [dbRes, fnRes] = await Promise.all([
+        supabase.from("contact_submissions").insert(parsed.data as ContactInput),
+        supabase.functions.invoke("contact-notify", { body: parsed.data }),
+      ]);
 
-      if (error) throw error;
-
-      await supabase.functions.invoke("contact-notify", { body: parsed.data });
+      if (dbRes.error) console.error("contact save failed", dbRes.error);
+      if (fnRes.error) console.error("contact notify failed", fnRes.error);
+      if (dbRes.error && fnRes.error) throw fnRes.error;
 
       toast({
         title: "Message sent",
