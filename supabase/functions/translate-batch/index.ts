@@ -123,7 +123,7 @@ Deno.serve(async (req) => {
       const systemPrompt = `You are a professional translator. Translate the user-provided JSON array of UI strings from English into ${LANG_NAMES[lang]}.
 Rules:
 - Preserve the EXACT same array length and order.
- - Do NOT translate proper nouns (names, brands, places like "Domingos Conde", "Open Mind Academy", "PixelShirtZ", "NÓDUS English Speak", "ConstruÁfrica", "42 Luanda", "Instituto Confúcio", "Universidade Agostinho Neto", "Calumbo", "Icolo e Bengo", "Angola", "HSK 1", "Piscine C", "Discovery Piscine Web", "LinkedIn", "GitHub").
+ - Do NOT translate proper nouns (names, brands, places like "Domingos Conde", "Open Mind Academy", "PixelShirtZ", "NÓDUS English Speak", "ConstruÁfrica", "42 Luanda", "Instituto Confúcio", "Universidade Agostinho Neto", "Calumbo", "Icolo e Bengo", "Angola", "HSK 1", "Piscine C", "Discovery Piscine Web", "LinkedIn", "GitHub", "ST Virtual Studio", "Eposso", "Galp Energia", "ASIS", "CS50").
 - Keep punctuation, emojis, numbers, URLs intact.
 - Return ONLY a JSON array of strings, same length, no explanation.`;
 

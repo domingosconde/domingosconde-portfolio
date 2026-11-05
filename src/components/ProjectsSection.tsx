@@ -1,4 +1,4 @@
-import { ExternalLink, MapPin } from "lucide-react";
+import { ExternalLink, MapPin, Palette, CalendarClock } from "lucide-react";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShirtzLogo from "@/assets/logos/pixelshirtz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
@@ -19,6 +19,26 @@ type Project = {
 
 const ProjectsSection = () => {
   const projects: Project[] = [
+    {
+      title: "ST Virtual Studio",
+      description: "A creative digital studio I founded, focused on design, visual communication, and digital solutions for companies and brands. Services include graphic design and visual identity, web design and UX/UI, video editing and motion design, social media management, and paid traffic.",
+      image: null,
+      icon: Palette,
+      tags: ["Creative Studio", "Graphic Design", "UX/UI", "Motion Design", "Social Media", "Paid Traffic"],
+      period: "November 2026 - Present",
+      link: null,
+      featured: true,
+    },
+    {
+      title: "Eposso",
+      description: "An online platform for mobile and web that I am founding to showcase beauty salons and aesthetics professionals in Huambo Province. Clients will be able to book appointments online, while salons manage their clients and schedules, a solution for both customers and businesses in the beauty sector.",
+      image: null,
+      icon: CalendarClock,
+      tags: ["Beauty & Aesthetics", "Booking Platform", "Mobile and Web", "Huambo Province", "Startup"],
+      period: "In Development",
+      link: null,
+      featured: true,
+    },
     {
       title: "Shengtian AO",
       description: "An AI assistant I created to give small farmers practical access to agricultural guidance. It answers questions through WhatsApp and SMS, helping people in areas with limited internet coverage when an agronomist is not readily available.",
