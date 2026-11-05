@@ -1,4 +1,4 @@
-import { ExternalLink, MapPin } from "lucide-react";
+import { ExternalLink, MapPin, Palette, CalendarClock } from "lucide-react";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShirtzLogo from "@/assets/logos/pixelshirtz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";

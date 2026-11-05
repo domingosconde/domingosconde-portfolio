@@ -1,12 +1,11 @@
-import { Calendar, CheckCircle2, Circle, MapPin } from "lucide-react";
+import { Calendar, CheckCircle2, Circle, MapPin, ExternalLink } from "lucide-react";
 import luanda42Logo from "@/assets/logos/42luanda.png";
 import confucioLogo from "@/assets/logos/confucio.png";
 import harvardAsset from "@/assets/courses/harvard-university.jpg.asset.json";
-import stanfordLogo from "@/assets/courses/stanford-university.jpg";
-import mitAsset from "@/assets/courses/mit.jpg.asset.json";
 import googleAsset from "@/assets/courses/google.jpg.asset.json";
 import googleAdsAsset from "@/assets/courses/google-ads.jpg.asset.json";
 import metaAsset from "@/assets/courses/meta.jpg.asset.json";
+import pmiAsset from "@/assets/courses/pmi.jpg.asset.json";
 
 type JourneyStatus = "completed" | "current" | "upcoming";
 
@@ -15,9 +14,12 @@ type Course = {
   institution: string;
   format: string;
   status: string;
+  date?: string;
   description: string;
   logos: string[];
+  journeyTitle?: string;
   journey?: { label: string; status: JourneyStatus }[];
+  file?: string;
 };
 
 const courses: Course[] = [
@@ -29,6 +31,7 @@ const courses: Course[] = [
     description:
       "Competing for admission through an intensive peer learning process focused on problem solving, programming, and collaborative work. I completed Discovery Piscine Web and am currently taking Piscine C.",
     logos: [luanda42Logo],
+    journeyTitle: "Admissions progress",
     journey: [
       { label: "Discovery Piscine Web", status: "completed" },
       { label: "Piscine C", status: "current" },
@@ -36,13 +39,21 @@ const courses: Course[] = [
     ],
   },
   {
-    title: "Mandarin Chinese, HSK 1",
+    title: "Mandarin Chinese",
     institution: "Instituto Confúcio at Universidade Agostinho Neto",
     format: "Luanda, Angola",
     status: "Ongoing",
     description:
-      "Developing introductory speaking, reading, writing, and cultural knowledge in Mandarin Chinese.",
+      "Developing introductory speaking, reading, writing, and cultural knowledge in Mandarin Chinese, currently at HSK 1, and progressing along the official HSK level pathway.",
     logos: [confucioLogo],
+    journeyTitle: "HSK pathway",
+    journey: [
+      { label: "HSK 1", status: "current" },
+      { label: "HSK 2", status: "upcoming" },
+      { label: "HSK 3", status: "upcoming" },
+      { label: "HSK 4", status: "upcoming" },
+      { label: "HSK 4+", status: "upcoming" },
+    ],
   },
   {
     title: "CS50's Computer Science for Business",
@@ -52,24 +63,104 @@ const courses: Course[] = [
     description:
       "Building a practical understanding of computer science concepts and how technology supports business decisions, products, and operations.",
     logos: [harvardAsset.url],
+    journeyTitle: "Course weeks",
+    journey: [
+      { label: "Interpreting Information", status: "current" },
+      { label: "Analyzing Algorithms", status: "upcoming" },
+      { label: "Designing Data Structures", status: "upcoming" },
+      { label: "Practicing Programming", status: "upcoming" },
+      { label: "Awakening Artificial Intelligence", status: "upcoming" },
+      { label: "Implementing the Internet", status: "upcoming" },
+      { label: "Weaving the Web", status: "upcoming" },
+      { label: "Deploying Databases", status: "upcoming" },
+      { label: "Securing Systems", status: "upcoming" },
+    ],
   },
   {
-    title: "Careers in Media Technology",
-    institution: "Stanford University via Kadenze",
+    title: "CS50's Introduction to Artificial Intelligence with Python",
+    institution: "Harvard University",
     format: "Online",
     status: "Ongoing",
     description:
-      "Exploring professional paths, production environments, and the technical skills used across modern media industries.",
-    logos: [stanfordLogo],
+      "Studying the concepts and algorithms behind modern artificial intelligence, including search, machine learning, neural networks, and natural language, through hands-on Python projects.",
+    logos: [harvardAsset.url],
+    journeyTitle: "Course weeks",
+    journey: [
+      { label: "Search", status: "current" },
+      { label: "Knowledge", status: "upcoming" },
+      { label: "Uncertainty", status: "upcoming" },
+      { label: "Optimization", status: "upcoming" },
+      { label: "Learning", status: "upcoming" },
+      { label: "Neural Networks", status: "upcoming" },
+      { label: "Language", status: "upcoming" },
+    ],
   },
   {
-    title: "Module 0: Introduction to Universal AI",
-    institution: "Massachusetts Institute of Technology via MITx Online",
+    title: "CS50's Web Programming with Python and JavaScript",
+    institution: "Harvard University",
     format: "Online",
     status: "Ongoing",
     description:
-      "Learning the foundations of artificial intelligence, its practical applications, and its wider impact on organisations and society.",
-    logos: [mitAsset.url],
+      "Learning to design and implement web applications with Python, JavaScript, and SQL, using frameworks such as Django and React, from database design to deployment.",
+    logos: [harvardAsset.url],
+    journeyTitle: "Course weeks",
+    journey: [
+      { label: "HTML, CSS", status: "current" },
+      { label: "Git", status: "upcoming" },
+      { label: "Python", status: "upcoming" },
+      { label: "Django", status: "upcoming" },
+      { label: "SQL, Models, and Migrations", status: "upcoming" },
+      { label: "JavaScript", status: "upcoming" },
+      { label: "User Interfaces", status: "upcoming" },
+      { label: "Testing, CI/CD", status: "upcoming" },
+      { label: "Scalability and Security", status: "upcoming" },
+      { label: "Final Project", status: "upcoming" },
+    ],
+  },
+  {
+    title: "CS50's Introduction to Databases with SQL",
+    institution: "Harvard University",
+    format: "Online",
+    status: "Ongoing",
+    description:
+      "Learning how to create, read, update, and delete data with relational databases, model real world entities and relationships, and work with SQLite, PostgreSQL, and MySQL.",
+    logos: [harvardAsset.url],
+    journeyTitle: "Course weeks",
+    journey: [
+      { label: "Querying", status: "current" },
+      { label: "Relating", status: "upcoming" },
+      { label: "Designing", status: "upcoming" },
+      { label: "Writing", status: "upcoming" },
+      { label: "Viewing", status: "upcoming" },
+      { label: "Optimizing", status: "upcoming" },
+      { label: "Scaling", status: "upcoming" },
+      { label: "Final Project", status: "upcoming" },
+    ],
+  },
+  {
+    title: "CS50's Mobile App Development with React Native",
+    institution: "Harvard University",
+    format: "Online",
+    status: "Ongoing",
+    description:
+      "Learning mobile app development with React Native, from modern JavaScript and React fundamentals to navigation, data, Redux, performance, and deployment.",
+    logos: [harvardAsset.url],
+    journeyTitle: "Course weeks",
+    journey: [
+      { label: "Overview, JavaScript", status: "current" },
+      { label: "JavaScript, ES6", status: "upcoming" },
+      { label: "React, Props, State", status: "upcoming" },
+      { label: "React Native", status: "upcoming" },
+      { label: "Lists, User Input", status: "upcoming" },
+      { label: "User Input, Debugging", status: "upcoming" },
+      { label: "Navigation", status: "upcoming" },
+      { label: "Data", status: "upcoming" },
+      { label: "Expo Components", status: "upcoming" },
+      { label: "Redux", status: "upcoming" },
+      { label: "Async Redux, Tools", status: "upcoming" },
+      { label: "Performance", status: "upcoming" },
+      { label: "Deploying, Testing", status: "upcoming" },
+    ],
   },
   {
     title: "Google Ads Apps Certification",
@@ -81,13 +172,29 @@ const courses: Course[] = [
     logos: [googleAsset.url, googleAdsAsset.url],
   },
   {
-    title: "Meta Ad Policies for Content, Creative, and Targeting",
-    institution: "Meta",
+    title: "Privacy and Data Protection Across Meta Technologies",
+    institution: "Meta via Meta Blueprint",
     format: "Online",
     status: "Ongoing",
     description:
-      "Studying Meta advertising standards for compliant content, responsible creative work, and appropriate audience targeting.",
+      "Studying privacy and data protection across Meta technologies, and how to create ads that follow Meta Advertising Standards.",
     logos: [metaAsset.url],
+    journeyTitle: "Course lessons",
+    journey: [
+      { label: "Introduction to Privacy and Data Protection", status: "completed" },
+      { label: "Meta Advertising Standards and Ad Review", status: "current" },
+    ],
+  },
+  {
+    title: "Project Management Foundations: Integration",
+    institution: "PMI Registered Education Provider, LinkedIn Learning",
+    format: "Online",
+    status: "Completed",
+    date: "January 2024",
+    description:
+      "Completed project integration management training, covering how to coordinate processes, people, and work across the project lifecycle. 0.50 PDUs or contact hours, Provider ID 4101.",
+    logos: [pmiAsset.url],
+    file: "/certificates/PMI-Project-Integration-Management-Domingos-Conde.pdf",
   },
 ];
 
@@ -104,7 +211,7 @@ const ProfessionalCoursesSection = () => {
               Professional Courses
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
-              Current learning focused on technology, business, digital advertising, media, and languages.
+              Learning journey across technology, business, project management, digital advertising, and languages.
             </p>
           </div>
 
@@ -125,7 +232,7 @@ const ProfessionalCoursesSection = () => {
                         <img
                           src={logo}
                           alt={`${course.institution} logo`}
-                          className={`w-full h-full object-contain ${course.title === "Careers in Media Technology" ? "p-0.5 scale-125" : "p-1.5"}`}
+                          className="w-full h-full object-contain p-1.5"
                           loading="lazy"
                         />
                       </div>
@@ -147,7 +254,7 @@ const ProfessionalCoursesSection = () => {
                   </span>
                   <span className="flex items-center gap-1.5">
                     <Calendar className="w-4 h-4" />
-                    In progress
+                    {course.date ?? "In progress"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed mt-4">
@@ -157,27 +264,47 @@ const ProfessionalCoursesSection = () => {
                 {course.journey && (
                   <div className="mt-6 pt-5 border-t border-border">
                     <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-4">
-                      Admissions progress
+                      {course.journeyTitle ?? "Course stages"}
                     </p>
-                    <div className="grid grid-cols-3 gap-2">
+                    <div className="flex flex-wrap gap-x-4 gap-y-3">
                       {course.journey.map((step) => (
-                        <div key={step.label} className="flex flex-col items-center gap-2 text-center">
+                        <div key={step.label} className="flex items-center gap-1.5">
                           {step.status === "completed" ? (
-                            <CheckCircle2 className="w-5 h-5 text-primary" />
+                            <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                           ) : step.status === "current" ? (
-                            <div className="relative">
-                              <Circle className="w-5 h-5 text-primary fill-primary/20" />
+                            <div className="relative shrink-0">
+                              <Circle className="w-4 h-4 text-primary fill-primary/20" />
                               <div className="absolute inset-0 rounded-full bg-primary animate-ping opacity-30" />
                             </div>
                           ) : (
-                            <Circle className="w-5 h-5 text-muted-foreground/40" />
+                            <Circle className="w-4 h-4 text-muted-foreground/40 shrink-0" />
                           )}
-                          <span className={`text-xs leading-tight ${step.status === "upcoming" ? "text-muted-foreground/60" : "text-foreground font-medium"}`}>
+                          <span
+                            className={`text-[11px] leading-tight ${
+                              step.status === "upcoming"
+                                ? "text-muted-foreground/60"
+                                : "text-foreground font-medium"
+                            }`}
+                          >
                             {step.label}
                           </span>
                         </div>
                       ))}
                     </div>
+                  </div>
+                )}
+
+                {course.file && (
+                  <div className="mt-6">
+                    <a
+                      href={course.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:underline"
+                    >
+                      View certificate
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
                   </div>
                 )}
               </article>
