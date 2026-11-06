@@ -27,3 +27,14 @@
 - [x] Mark Fundação ConstruÁfrica as past experience across experience and social impact
 - [x] Add Galp Energia via ASIS as a current role with dates and sales tags
 - [x] Verify all mentions and rendered role states
+
+# November 2026 courses and startups update
+
+- [x] Remove MIT and Stanford courses from Professional Courses
+- [x] Retitle the Meta course to Privacy and Data Protection Across Meta Technologies
+- [x] Add verified official stage timelines to courses (42 Luanda, HSK pathway, five CS50 courses, Meta)
+- [x] Add the PMI course to Professional Courses with certificate link
+- [x] Add ST Virtual Studio and Eposso to Featured Work and About
+- [x] Update skills, SEO metadata, and translation proper nouns
+- [ ] Redeploy translate-batch and verify the rendered page
+- [ ] Publish the site so the contact form works on the live URL
