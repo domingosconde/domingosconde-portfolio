@@ -1,4 +1,4 @@
-import { FileSpreadsheet, Monitor, Code2, Globe, Users, MessageSquare, Clock, Eye, ShieldCheck, Lightbulb } from "lucide-react";
+import { FileSpreadsheet, Monitor, Code2, Globe, Users, MessageSquare, Clock, Eye, ShieldCheck, Lightbulb, Palette, Clapperboard, CalendarClock } from "lucide-react";
 
 type Level = "Beginner" | "Intermediate" | "Advanced";
 
@@ -67,7 +67,7 @@ const SkillsSection = () => {
     {
       name: "Digital Automation & Social Media Management",
       level: "Intermediate",
-      context: "Designing automation workflows and managing social channels for clients through Bee Core System.",
+      context: "Designing automation workflows and managing social channels for clients through Bee Core System and ST Virtual Studio.",
       icon: Globe,
     },
     {
@@ -75,6 +75,24 @@ const SkillsSection = () => {
       level: "Intermediate",
       context: "Led paid campaigns, visual identity and creative direction for LeyV Comercial's online supermarket in 2026.",
       icon: Lightbulb,
+    },
+    {
+      name: "Graphic Design & Visual Identity",
+      level: "Intermediate",
+      context: "Brand identity, layouts, and visual systems for companies and brands through ST Virtual Studio.",
+      icon: Palette,
+    },
+    {
+      name: "Video Editing & Motion Design",
+      level: "Beginner",
+      context: "Video editing and motion graphics for visual communication through ST Virtual Studio services.",
+      icon: Clapperboard,
+    },
+    {
+      name: "Product & Platform Planning",
+      level: "Intermediate",
+      context: "Defining scope, features, and booking flows for Eposso, a salon scheduling platform for Huambo Province.",
+      icon: CalendarClock,
     },
   ];
 
