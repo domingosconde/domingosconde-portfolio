@@ -38,3 +38,11 @@
 - [x] Update skills, SEO metadata, and translation proper nouns
 - [x] Redeploy translate-batch and verify the rendered page
 - [x] Publish the site so the contact form works on the live URL
+
+# November 2026 startup assets and links
+
+- [x] Mark Awakening Artificial Intelligence as the current CS50 Business stage
+- [x] Add the uploaded Eposso and ST Virtual Studio logos to their project cards
+- [x] Add the Open Mind Academy AO and Shengtian AO website links
+- [x] Show a small coming-soon website action for other founded startups
+- [ ] Verify the mobile layout and live preview rendering
