@@ -36,5 +36,5 @@
 - [x] Add the PMI course to Professional Courses with certificate link
 - [x] Add ST Virtual Studio and Eposso to Featured Work and About
 - [x] Update skills, SEO metadata, and translation proper nouns
-- [ ] Redeploy translate-batch and verify the rendered page
-- [ ] Publish the site so the contact form works on the live URL
+- [x] Redeploy translate-batch and verify the rendered page
+- [x] Publish the site so the contact form works on the live URL
