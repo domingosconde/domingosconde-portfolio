@@ -45,4 +45,4 @@
 - [x] Add the uploaded Eposso and ST Virtual Studio logos to their project cards
 - [x] Add the Open Mind Academy AO and Shengtian AO website links
 - [x] Show a small coming-soon website action for other founded startups
-- [ ] Verify the mobile layout and live preview rendering
+- [x] Verify the mobile layout and live preview rendering

@@ -62,6 +62,7 @@ const ProjectsSection = () => {
       tags: ["E-commerce", "Social Media", "Art Direction", "Startup"],
       period: "2026",
       link: null,
+      websiteComingSoon: true,
       featured: false,
     },
     {
@@ -185,7 +186,7 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Link */}
-                {project.link && (
+                {project.link ? (
                   <Button asChild size="sm" variant="outline" className="h-8 px-2.5 text-xs">
                     <a
                       href={project.link}
