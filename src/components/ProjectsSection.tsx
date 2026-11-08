@@ -1,4 +1,4 @@
-import { ExternalLink, MapPin, Palette, CalendarClock } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShirtzLogo from "@/assets/logos/pixelshirtz.png";
@@ -6,8 +6,8 @@ import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
 import shengtianLogo from "@/assets/logos/shengtian-ao.jpg";
-import stVirtualStudioLogo from "@/assets/logos/st-virtual-studio-logo.png.asset.json";
-import epossoLogo from "@/assets/logos/eposso-logo.png.asset.json";
+import stVirtualStudioLogo from "@/assets/logos/st-virtual-studio-logo.webp";
+import epossoLogo from "@/assets/logos/eposso-logo.webp";
 
 type Project = {
   title: string;
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
     {
       title: "ST Virtual Studio",
       description: "A creative digital studio I founded, focused on design, visual communication, and digital solutions for companies and brands. Services include graphic design and visual identity, web design and UX/UI, video editing and motion design, social media management, and paid traffic.",
-      image: stVirtualStudioLogo.url,
+      image: stVirtualStudioLogo,
       icon: null,
       tags: ["Creative Studio", "Graphic Design", "UX/UI", "Motion Design", "Social Media", "Paid Traffic"],
       period: "November 2026 - Present",
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
     {
       title: "Eposso",
       description: "An online platform for mobile and web that I am founding to showcase beauty salons and aesthetics professionals in Huambo Province. Clients will be able to book appointments online, while salons manage their clients and schedules, a solution for both customers and businesses in the beauty sector.",
-      image: epossoLogo.url,
+      image: epossoLogo,
       icon: null,
       tags: ["Beauty & Aesthetics", "Booking Platform", "Mobile and Web", "Huambo Province", "Startup"],
       period: "In Development",
