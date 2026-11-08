@@ -200,7 +200,7 @@ const ProjectsSection = () => {
                   </Button>
                 ) : project.websiteComingSoon ? (
                   <p className="text-xs text-muted-foreground">Website link coming soon</p>
-                )}
+                ) : null}
               </div>
             ))}
           </div>
