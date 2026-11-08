@@ -1,10 +1,13 @@
-import { ExternalLink, MapPin, Palette, CalendarClock } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import openMindLogo from "@/assets/logos/openmindacademy.png";
 import pixelShirtzLogo from "@/assets/logos/pixelshirtz.png";
 import beeCoreLogo from "@/assets/logos/beecoresystem.png";
 import leyvLogo from "@/assets/logos/leyvcomercial.jpg";
 import nodusLogo from "@/assets/logos/nodus.png";
 import shengtianLogo from "@/assets/logos/shengtian-ao.jpg";
+import stVirtualStudioLogo from "@/assets/logos/st-virtual-studio-logo.webp";
+import epossoLogo from "@/assets/logos/eposso-logo.webp";
 
 type Project = {
   title: string;
@@ -14,6 +17,7 @@ type Project = {
   tags: string[];
   period?: string;
   link: string | null;
+  websiteComingSoon?: boolean;
   featured: boolean;
 };
 
@@ -22,21 +26,23 @@ const ProjectsSection = () => {
     {
       title: "ST Virtual Studio",
       description: "A creative digital studio I founded, focused on design, visual communication, and digital solutions for companies and brands. Services include graphic design and visual identity, web design and UX/UI, video editing and motion design, social media management, and paid traffic.",
-      image: null,
-      icon: Palette,
+      image: stVirtualStudioLogo,
+      icon: null,
       tags: ["Creative Studio", "Graphic Design", "UX/UI", "Motion Design", "Social Media", "Paid Traffic"],
       period: "November 2026 - Present",
       link: null,
+      websiteComingSoon: true,
       featured: true,
     },
     {
       title: "Eposso",
       description: "An online platform for mobile and web that I am founding to showcase beauty salons and aesthetics professionals in Huambo Province. Clients will be able to book appointments online, while salons manage their clients and schedules, a solution for both customers and businesses in the beauty sector.",
-      image: null,
-      icon: CalendarClock,
+      image: epossoLogo,
+      icon: null,
       tags: ["Beauty & Aesthetics", "Booking Platform", "Mobile and Web", "Huambo Province", "Startup"],
       period: "In Development",
       link: null,
+      websiteComingSoon: true,
       featured: true,
     },
     {
@@ -45,7 +51,7 @@ const ProjectsSection = () => {
       image: shengtianLogo,
       icon: null,
       tags: ["Artificial Intelligence", "Agriculture", "WhatsApp", "SMS", "Social Impact"],
-      link: null,
+      link: "https://shengtianao.lovable.app",
       featured: true,
     },
     {
@@ -56,6 +62,7 @@ const ProjectsSection = () => {
       tags: ["E-commerce", "Social Media", "Art Direction", "Startup"],
       period: "2026",
       link: null,
+      websiteComingSoon: true,
       featured: false,
     },
     {
@@ -66,6 +73,7 @@ const ProjectsSection = () => {
       tags: ["Automation", "Social Media", "Digital Strategy"],
       period: "May 2026 - Present",
       link: null,
+      websiteComingSoon: true,
       featured: true,
     },
     {
@@ -74,7 +82,7 @@ const ProjectsSection = () => {
       image: openMindLogo,
       icon: null,
       tags: ["Education", "Administration", "Management"],
-      link: null,
+      link: "https://openmindacademyao.lovable.app",
       featured: true,
     },
     {
@@ -84,6 +92,7 @@ const ProjectsSection = () => {
       icon: null,
       tags: ["E-commerce", "Fashion", "Geek Culture"],
       link: null,
+      websiteComingSoon: true,
       featured: true,
     },
     {
@@ -93,6 +102,7 @@ const ProjectsSection = () => {
       icon: null,
       tags: ["Education", "Community", "Leadership", "English"],
       link: null,
+      websiteComingSoon: true,
       featured: true,
     },
     {
@@ -102,6 +112,7 @@ const ProjectsSection = () => {
       icon: MapPin,
       tags: ["React", "TypeScript", "Tailwind", "Google Maps API", "Civic Tech"],
       link: null,
+      websiteComingSoon: true,
       featured: false,
     },
   ];
@@ -175,17 +186,21 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Link */}
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline"
-                  >
-                    View Project
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                )}
+                {project.link ? (
+                  <Button asChild size="sm" variant="outline" className="h-8 px-2.5 text-xs">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Visit ${project.title} website`}
+                    >
+                      Visit website
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </Button>
+                ) : project.websiteComingSoon ? (
+                  <p className="text-xs text-muted-foreground">Website link coming soon</p>
+                ) : null}
               </div>
             ))}
           </div>
