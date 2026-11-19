@@ -46,3 +46,9 @@
 - [x] Add the Open Mind Academy AO and Shengtian AO website links
 - [x] Show a small coming-soon website action for other founded startups
 - [x] Verify the mobile layout and live preview rendering
+
+# November 2026 certificates
+
+- [x] Verify the NASA Space Apps Challenge and SUMOL participation certificates
+- [x] Convert the SUMOL certificate photo to PDF and add both credentials and four logos to Certifications
+- [x] Verify the new cards and certificate links on desktop and mobile

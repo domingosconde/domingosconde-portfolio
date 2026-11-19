@@ -1,6 +1,45 @@
 import { Calendar, ExternalLink, MapPin } from "lucide-react";
 import fendaTundavalaLogo from "@/assets/logos/fendatundavala.png";
 import pmiAsset from "@/assets/courses/pmi.jpg.asset.json";
+import nasaLogo from "@/assets/certifications/nasa.png.asset.json";
+import ggpenLogo from "@/assets/certifications/ggpen.png.asset.json";
+import sumolLogo from "@/assets/certifications/sumol.png.asset.json";
+import sumolAcademiaLogo from "@/assets/certifications/sumol-academia-digital.png.asset.json";
+import nasaCertificate from "@/assets/certifications/nasa-space-apps-challenge-2026.pdf.asset.json";
+import sumolCertificate from "@/assets/certifications/sumol-academia-digital-2026.pdf.asset.json";
+
+const certifications = [
+  {
+    title: "SUMOL Academia Digital: 3rd Edition",
+    issuer: "SUMOL",
+    date: "November 17, 2026",
+    detail: "Certificate of participation in a digital creativity workshop at Hotel Continental Horizonte in Luanda, Angola.",
+    file: sumolCertificate.url,
+    logos: [
+      { src: sumolLogo.url, alt: "SUMOL logo" },
+      { src: sumolAcademiaLogo.url, alt: "SUMOL Academia Digital logo" },
+    ],
+  },
+  {
+    title: "NASA Space Apps Challenge: Calumbo",
+    issuer: "NASA Space Apps Challenge",
+    date: "November 14–15, 2026",
+    detail: "Galactic Problem Solver certificate for participation in the 2026 global hackathon, which tackles challenges on Earth and in space.",
+    file: nasaCertificate.url,
+    logos: [
+      { src: nasaLogo.url, alt: "NASA logo" },
+      { src: ggpenLogo.url, alt: "GGPEN logo" },
+    ],
+  },
+  {
+    title: "Project Management Foundations: Integration",
+    issuer: "PMI Registered Education Provider, LinkedIn Learning",
+    date: "January 2024",
+    detail: "Project Integration Management. 0.50 PDUs or contact hours. Provider ID 4101.",
+    file: "/certificates/PMI-Project-Integration-Management-Domingos-Conde.pdf",
+    logos: [{ src: pmiAsset.url, alt: "Project Management Institute logo" }],
+  },
+];
 
 const EducationSection = () => {
   const education = [
@@ -121,34 +160,24 @@ const EducationSection = () => {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">
-              {[
-                {
-                  title: "Project Management Foundations: Integration",
-                   issuer: "PMI Registered Education Provider, LinkedIn Learning",
-                  date: "January 2024",
-                   detail: "Project Integration Management. 0.50 PDUs or contact hours. Provider ID 4101.",
-                  file: "/certificates/PMI-Project-Integration-Management-Domingos-Conde.pdf",
-                   logo: pmiAsset.url,
-                },
-              ].map((cert) => (
-                <div
+              {certifications.map((cert) => (
+                <article
                   key={cert.title}
-                  className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elegant"
+                  className="group flex flex-col p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elegant"
                 >
-                   <div className="w-14 h-14 rounded-lg bg-primary-foreground border border-border flex items-center justify-center mb-4 overflow-hidden">
-                     <img
-                       src={cert.logo}
-                       alt="Project Management Institute logo"
-                       className="w-full h-full object-contain p-1.5"
-                       loading="lazy"
-                     />
+                  <div className="flex gap-2 mb-4">
+                    {cert.logos.map((logo) => (
+                      <div key={logo.alt} className="w-16 h-14 rounded-lg bg-primary-foreground border border-border overflow-hidden">
+                        <img src={logo.src} alt={logo.alt} className="w-full h-full object-contain p-1.5" loading="lazy" />
+                      </div>
+                    ))}
                   </div>
                   <h4 className="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                     {cert.title}
                   </h4>
                   <p className="text-sm text-muted-foreground mt-1">{cert.issuer}</p>
                   <p className="text-xs text-muted-foreground mt-3">{cert.detail}</p>
-                  <div className="flex items-center justify-between mt-5">
+                  <div className="mt-auto flex flex-wrap items-center justify-between gap-x-3 gap-y-2 pt-5">
                     <span className="text-xs text-muted-foreground flex items-center gap-1.5">
                       <Calendar className="w-3.5 h-3.5" />
                       {cert.date}
@@ -157,13 +186,14 @@ const EducationSection = () => {
                       href={cert.file}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`View certificate: ${cert.title}`}
                       className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:underline"
                     >
                       View certificate
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
-                </div>
+                </article>
               ))}
             </div>
           </div>
