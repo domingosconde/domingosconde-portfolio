@@ -85,9 +85,6 @@ const AboutSection = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                  My work spans education, e-commerce, digital services, and social impact. I bring structure to ideas, clarify responsibilities, and help teams move from planning to consistent delivery.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I took part in the NASA Space Apps Challenge in Calumbo and the SUMOL Academia Digital workshop in Luanda, exploring challenge-based problem solving and digital creativity.
-              </p>
             </div>
 
             {/* Highlights Grid */}

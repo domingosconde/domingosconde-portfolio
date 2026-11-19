@@ -73,7 +73,7 @@ const SkillsSection = () => {
     {
       name: "Advertising Campaigns & Art Direction",
       level: "Intermediate",
-      context: "Led paid campaigns, visual identity and creative direction for LeyV Comercial's online supermarket in 2026. Continued exploring digital creativity at the SUMOL Academia Digital workshop in Luanda.",
+      context: "Led paid campaigns, visual identity and creative direction for LeyV Comercial's online supermarket in 2026.",
       icon: Lightbulb,
     },
     {
@@ -130,7 +130,7 @@ const SkillsSection = () => {
     {
       name: "Problem Solving",
       description:
-        "Breaks operational problems down before acting and documents the fix. Explored challenge-based problem solving as a participant in the NASA Space Apps Challenge in Calumbo.",
+        "Analytical approach to operational issues; breaks problems down before acting and documents the fix.",
       icon: Lightbulb,
     },
     {
