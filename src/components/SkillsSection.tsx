@@ -1,6 +1,6 @@
-import { FileSpreadsheet, Monitor, Code2, Globe, Users, MessageSquare, Clock, Eye, ShieldCheck, Lightbulb, Palette, Clapperboard, CalendarClock } from "lucide-react";
+import { FileSpreadsheet, Monitor, Code2, Globe, Users, MessageSquare, Clock, Eye, ShieldCheck, Lightbulb, Palette, Clapperboard, CalendarClock, Wrench } from "lucide-react";
 
-type Level = "Beginner" | "Intermediate" | "Advanced";
+type Level = "Beginner" | "Intermediate" | "Advanced" | "Exposure";
 
 interface HardSkill {
   name: string;
@@ -18,6 +18,12 @@ interface SoftSkill {
 
 const SkillsSection = () => {
   const hardSkills: HardSkill[] = [
+    {
+      name: "Robotics & Prototyping",
+      level: "Exposure",
+      context: "Introductory workshop participation with ECS and Grupo Norte at NASA Space Apps Calumbo on November 15, 2026.",
+      icon: Wrench,
+    },
     {
       name: "Microsoft Excel",
       level: "Advanced",
@@ -151,6 +157,7 @@ const SkillsSection = () => {
     Beginner: "bg-muted text-muted-foreground border-border",
     Intermediate: "bg-primary/10 text-primary border-primary/30",
     Advanced: "bg-primary text-primary-foreground border-primary",
+    Exposure: "bg-muted text-muted-foreground border-border",
   };
 
   return (

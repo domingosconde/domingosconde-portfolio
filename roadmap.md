@@ -52,3 +52,10 @@
 - [x] Verify the NASA Space Apps Challenge and SUMOL participation certificates
 - [x] Convert the SUMOL certificate photo to PDF and add both credentials and four logos to Certifications
 - [x] Verify the new cards and certificate links on desktop and mobile
+
+# Robotics certificate and logo correction
+
+- [x] Swap the Eposso and ST Virtual Studio project logos
+- [x] Add the ECS robotics and prototyping certificate with three supplied logos
+- [x] Update relevant skills and About with supported workshop participation
+- [x] Verify the certificate link and desktop/mobile presentation

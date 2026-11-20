@@ -7,8 +7,24 @@ import sumolLogo from "@/assets/certifications/sumol.png.asset.json";
 import sumolAcademiaLogo from "@/assets/certifications/sumol-academia-digital.png.asset.json";
 import nasaCertificate from "@/assets/certifications/nasa-space-apps-challenge-2026.pdf.asset.json";
 import sumolCertificate from "@/assets/certifications/sumol-academia-digital-2026.pdf.asset.json";
+import roboticsCertificate from "@/assets/certifications/robotics-prototyping-calumbo-2026.pdf.asset.json";
+import ecsLogo from "@/assets/certifications/ecs-eletrocode-solutions.png.asset.json";
+import grupoNorteLogo from "@/assets/certifications/grupo-norte.png.asset.json";
+import spaceAppsCalumboLogo from "@/assets/certifications/nasa-space-apps-calumbo.jpg.asset.json";
 
 const certifications = [
+  {
+    title: "Robotics & Prototyping Workshop: NASA Space Apps Calumbo",
+    issuer: "ECS (EletroCode Solutions), in partnership with Grupo Norte",
+    date: "November 15, 2026",
+    detail: "Certificate of participation in robotics and prototyping workshops for NASA Space Apps Challenge Calumbo participants. Mentor: Adilson Ganga.",
+    file: roboticsCertificate.url,
+    logos: [
+      { src: ecsLogo.url, alt: "ECS EletroCode Solutions logo" },
+      { src: grupoNorteLogo.url, alt: "Grupo Norte logo" },
+      { src: spaceAppsCalumboLogo.url, alt: "NASA Space Apps Challenge Calumbo logo" },
+    ],
+  },
   {
     title: "SUMOL Academia Digital: 3rd Edition",
     issuer: "SUMOL",
@@ -165,9 +181,9 @@ const EducationSection = () => {
                   key={cert.title}
                   className="group flex flex-col p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elegant"
                 >
-                  <div className="flex gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {cert.logos.map((logo) => (
-                      <div key={logo.alt} className="w-16 h-14 rounded-lg bg-primary-foreground border border-border overflow-hidden">
+                      <div key={logo.alt} className="w-20 h-16 rounded-lg bg-primary-foreground border border-border overflow-hidden">
                         <img src={logo.src} alt={logo.alt} className="w-full h-full object-contain p-1.5" loading="lazy" />
                       </div>
                     ))}

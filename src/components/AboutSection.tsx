@@ -36,7 +36,7 @@ const AboutSection = () => {
     {
       icon: Code2,
       title: "Tech & Programming Foundations",
-      description: "C programming and web development foundations developed through the 42 Luanda admissions journey",
+      description: "C programming and web development foundations through 42 Luanda, complemented by introductory robotics and prototyping workshops with ECS and Grupo Norte at NASA Space Apps Calumbo",
     },
     {
       icon: Languages,
